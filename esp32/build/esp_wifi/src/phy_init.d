@@ -1,6 +1,6 @@
 src/phy_init.o: /home/hans/esp/esp-idf/components/esp_wifi/src/phy_init.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -110,7 +110,7 @@ src/phy_init.o: /home/hans/esp/esp-idf/components/esp_wifi/src/phy_init.c \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h:
 

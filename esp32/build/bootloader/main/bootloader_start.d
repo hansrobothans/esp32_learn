@@ -1,7 +1,7 @@
 bootloader_start.o: \
  /home/hans/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
- /home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
@@ -23,7 +23,7 @@ bootloader_start.o: \
 
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

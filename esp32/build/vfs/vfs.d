@@ -1,6 +1,6 @@
 vfs.o: /home/hans/esp/esp-idf/components/vfs/vfs.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -44,7 +44,7 @@ vfs.o: /home/hans/esp/esp-idf/components/vfs/vfs.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/vfs/include/sys/ioctl.h:
 

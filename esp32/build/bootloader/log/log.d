@@ -1,6 +1,6 @@
 log.o: /home/hans/esp/esp-idf/components/log/log.c \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -12,7 +12,7 @@ log.o: /home/hans/esp/esp-idf/components/log/log.c \
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h:
 

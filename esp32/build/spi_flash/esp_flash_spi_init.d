@@ -1,6 +1,6 @@
 esp_flash_spi_init.o: \
  /home/hans/esp/esp-idf/components/spi_flash/esp_flash_spi_init.c \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_flash.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -51,7 +51,7 @@ esp_flash_spi_init.o: \
  /home/hans/esp/esp-idf/components/driver/include/driver/spi_common.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/lldesc.h
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/spi_flash/include/esp_flash.h:
 

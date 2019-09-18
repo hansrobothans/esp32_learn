@@ -1,6 +1,6 @@
 esp32/rtc_pm.o: /home/hans/esp/esp-idf/components/soc/esp32/rtc_pm.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -16,7 +16,7 @@ esp32/rtc_pm.o: /home/hans/esp/esp-idf/components/soc/esp32/rtc_pm.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 

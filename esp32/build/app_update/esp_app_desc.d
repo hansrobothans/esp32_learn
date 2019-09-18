@@ -1,7 +1,7 @@
 esp_app_desc.o: \
  /home/hans/esp/esp-idf/components/app_update/esp_app_desc.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/app_update/include/esp_ota_ops.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_partition.h \
@@ -17,7 +17,7 @@ esp_app_desc.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/app_update/include/esp_ota_ops.h:
 

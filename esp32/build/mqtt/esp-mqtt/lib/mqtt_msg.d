@@ -2,7 +2,7 @@ esp-mqtt/lib/mqtt_msg.o: \
  /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c \
  /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/mqtt_msg.h \
  /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform.h \
  /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform_esp32_idf.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -89,7 +89,7 @@ esp-mqtt/lib/mqtt_msg.o: \
 
 /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/include/mqtt_config.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform.h:
 

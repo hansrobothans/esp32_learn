@@ -1,7 +1,5 @@
 #include "bsp_i2c.h"
 
-
-
 /*
 ===========================
 函数定义
@@ -10,7 +8,7 @@
 
 
 /** 
- * oled_i2c 初始化
+ * bsp_i2c 初始化
  * @param[in]   NULL
  * @retval      
  *              NULL                              
@@ -20,7 +18,7 @@
  *               Ver0.0.2:
                      hans, 2019/09/08, 统一编程风格\n 
  */
-void i2c_init(void)
+void bsp_i2c_init(void)
 {
     //i2c配置结构体
     i2c_config_t conf;

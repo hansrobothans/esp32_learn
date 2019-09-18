@@ -2,7 +2,7 @@ mdns_console.o: /home/hans/esp/esp-idf/components/mdns/mdns_console.c \
  /home/hans/esp/esp-idf/components/console/esp_console.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/console/argtable3/argtable3.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/time.h \
  /home/hans/esp/esp-idf/components/mdns/include/mdns.h \
@@ -77,7 +77,7 @@ mdns_console.o: /home/hans/esp/esp-idf/components/mdns/mdns_console.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/console/argtable3/argtable3.h:
 

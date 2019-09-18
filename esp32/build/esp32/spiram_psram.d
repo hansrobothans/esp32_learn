@@ -1,5 +1,5 @@
 spiram_psram.o: /home/hans/esp/esp-idf/components/esp32/spiram_psram.c \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -58,7 +58,7 @@ spiram_psram.o: /home/hans/esp/esp-idf/components/esp32/spiram_psram.c \
  /home/hans/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/hans/esp/esp-idf/components/bootloader_support/include/esp_app_format.h
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 

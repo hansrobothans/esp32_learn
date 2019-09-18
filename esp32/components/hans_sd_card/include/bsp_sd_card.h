@@ -20,6 +20,6 @@
 static const char *TAG = "example";
 
 void sd_text(void);
-
+void sd_ex(void);
 
 #endif//BSP_SD_CARD_H

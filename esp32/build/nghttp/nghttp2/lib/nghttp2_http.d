@@ -18,7 +18,7 @@ nghttp2/lib/nghttp2_http.o: \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h
 
 /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_http.h:
@@ -57,7 +57,7 @@ nghttp2/lib/nghttp2_http.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h:
 /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_http.c:

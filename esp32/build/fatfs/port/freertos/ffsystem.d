@@ -2,7 +2,7 @@ port/freertos/ffsystem.o: \
  /home/hans/esp/esp-idf/components/fatfs/port/freertos/ffsystem.c \
  /home/hans/esp/esp-idf/components/fatfs/src/ff.h \
  /home/hans/esp/esp-idf/components/fatfs/src/ffconf.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -42,7 +42,7 @@ port/freertos/ffsystem.o: \
 
 /home/hans/esp/esp-idf/components/fatfs/src/ffconf.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

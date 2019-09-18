@@ -1,7 +1,7 @@
 port/esp_bignum.o: \
  /home/hans/esp/esp-idf/components/mbedtls/port/esp_bignum.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/bigint.h \
  /home/hans/esp/esp-idf/components/soc/include/soc/hwcrypto_periph.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
@@ -62,7 +62,7 @@ port/esp_bignum.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/bigint.h:
 

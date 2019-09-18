@@ -3,7 +3,7 @@ src/nvs_encr.o: \
  /home/hans/esp/esp-idf/components/nvs_flash/src/nvs_encr.hpp \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /home/hans/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
@@ -33,7 +33,7 @@ src/nvs_encr.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h:
 

@@ -1,6 +1,6 @@
 # include"bsp_sd_card.h"
 
-sdmmc_card_t* sd_card_init(void)
+sdmmc_card_t* bsp_sd_card_init(void)
 {
     ESP_LOGI(TAG, "Initializing SD card");
     ESP_LOGI(TAG, "Using SPI peripheral");
@@ -48,53 +48,45 @@ sdmmc_card_t* sd_card_init(void)
     return card;
 }
 
-void sd_text(void)
+void bsp_sd_card_open_to_read(char *path)
 {
-	
-    printf("1\n");
-    sdmmc_card_t* card = sd_card_init();
-    // Use POSIX and C standard标准 library functions to work with files.
-    // First create a file.
-    ESP_LOGI(TAG, "Opening file");
-    FILE* f = fopen("/sdcard/hello.txt", "w");
-    if (f == NULL) {
-        ESP_LOGE(TAG, "Failed to open file for writing");
-        return;
-    }
-    fprintf(f, "Hello %s!\n", card->cid.name);
-    fclose(f);
-    ESP_LOGI(TAG, "File written");
-
     // Check if destination file exists before renaming
     struct stat st;
-    if (stat("/sdcard/foo.txt", &st) == 0) {
-        // Delete it if it exists
-        unlink("/sdcard/foo.txt");
+    if (stat(path, &st) == 0) {
+        printf("The sd exists %s\n",path);
     }
-
-    // Rename original file
-    ESP_LOGI(TAG, "Renaming file");
-    if (rename("/sdcard/hello.txt", "/sdcard/foo.txt") != 0) {
-        ESP_LOGE(TAG, "Rename failed");
-        return;
-    }
-
-    // Open renamed file for reading
+    printf("2\n");
+    // Open file for reading
     ESP_LOGI(TAG, "Reading file");
-    f = fopen("/sdcard/foo.txt", "r");
+    FILE* f = fopen(path, "r");
     if (f == NULL) {
         ESP_LOGE(TAG, "Failed to open file for reading");
         return;
     }
-    char line[64];
-    fgets(line, sizeof(line), f);
-    fclose(f);
-    // strip newline
-    char* pos = strchr(line, '\n');
-    if (pos) {
-        *pos = '\0';
+    char line[180];
+    while(fgets(line, sizeof(line), f))
+    {
+        // strip newline
+        char* pos = strchr(line, '\n');
+        if (pos) {
+            *pos = '\0';
+        }
+        ESP_LOGI(TAG, "Read from file: '%s'", line);
     }
-    ESP_LOGI(TAG, "Read from file: '%s'", line);
+    fclose(f);
+}
+
+
+void sd_text(void)
+{
+	
+    printf("1\n");
+    // sdmmc_card_t* card = bsp_sd_card_init();
+    bsp_sd_card_init();
+
+    // Use POSIX and C standard标准 library functions to work with files.  
+    char* path="/sdcard/a.html";
+    bsp_sd_card_open_to_read(path);
 
     // All done, unmount partition and disable SDMMC or SPI peripheral
     esp_vfs_fat_sdmmc_unmount();

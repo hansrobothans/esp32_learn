@@ -31,7 +31,9 @@ void app_main()
 
     //测试oled显示屏的
     // bsp_oled_to_show();
+    bsp_oled_to_text(5,10,15,20);
 
     //测试sd卡
-    sd_text();
+    // sd_text();
+    // sd_ex();
 }

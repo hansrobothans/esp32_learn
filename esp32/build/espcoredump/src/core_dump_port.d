@@ -4,7 +4,7 @@ src/core_dump_port.o: \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/espcoredump/include_core_dump/esp_core_dump_priv.h \
@@ -50,7 +50,7 @@ src/core_dump_port.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

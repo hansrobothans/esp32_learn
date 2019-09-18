@@ -1,7 +1,7 @@
 random.o: /home/hans/esp/esp-idf/components/newlib/random.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/random.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -16,7 +16,7 @@ random.o: /home/hans/esp/esp-idf/components/newlib/random.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h:
 

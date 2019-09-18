@@ -1,7 +1,7 @@
 spi_flash_rom_patch.o: \
  /home/hans/esp/esp-idf/components/spi_flash/spi_flash_rom_patch.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/spi_flash.h \
@@ -18,7 +18,7 @@ spi_flash_rom_patch.o: \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
 

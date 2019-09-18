@@ -1,9 +1,9 @@
-esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
- /home/hans/git/esp32/esp32/main/esp32.h \
+esp32.o: /home/hans/git/esp32_learn/esp32/main/esp32.c \
+ /home/hans/git/esp32_learn/esp32/main/esp32.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -63,16 +63,15 @@ esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- /home/hans/git/esp32/esp32/components/hans_led_rgb/include/bsp_led_rgb.h \
- /home/hans/git/esp32/esp32/components/hans_oled/include/bsp_oled.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_led_rgb/include/bsp_led_rgb.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_oled/include/bsp_oled.h \
  /home/hans/esp/esp-idf/components/driver/include/driver/i2c.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/hans/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
- /home/hans/git/esp32/esp32/components/hans_oled/include/fonts.h \
- /home/hans/git/esp32/esp32/components/hans_oled/include/bsp_i2c.h \
- /home/hans/git/esp32/esp32/components/hans_oled/include/oled.h \
- /home/hans/git/esp32/esp32/components/hans_sd_card/include/bsp_sd_card.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_oled/include/fonts.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_i2c/include/bsp_i2c.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_sd_card/include/bsp_sd_card.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /home/hans/esp/esp-idf/components/fatfs/vfs/esp_vfs_fat.h \
  /home/hans/esp/esp-idf/components/driver/include/driver/sdmmc_types.h \
@@ -94,7 +93,7 @@ esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
  /home/hans/esp/esp-idf/components/wear_levelling/include/wear_levelling.h \
  /home/hans/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h
 
-/home/hans/git/esp32/esp32/main/esp32.h:
+/home/hans/git/esp32_learn/esp32/main/esp32.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -102,7 +101,7 @@ esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -222,9 +221,9 @@ esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
 
-/home/hans/git/esp32/esp32/components/hans_led_rgb/include/bsp_led_rgb.h:
+/home/hans/git/esp32_learn/esp32/components/hans_led_rgb/include/bsp_led_rgb.h:
 
-/home/hans/git/esp32/esp32/components/hans_oled/include/bsp_oled.h:
+/home/hans/git/esp32_learn/esp32/components/hans_oled/include/bsp_oled.h:
 
 /home/hans/esp/esp-idf/components/driver/include/driver/i2c.h:
 
@@ -234,13 +233,11 @@ esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
 
 /home/hans/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
-/home/hans/git/esp32/esp32/components/hans_oled/include/fonts.h:
+/home/hans/git/esp32_learn/esp32/components/hans_oled/include/fonts.h:
 
-/home/hans/git/esp32/esp32/components/hans_oled/include/bsp_i2c.h:
+/home/hans/git/esp32_learn/esp32/components/hans_i2c/include/bsp_i2c.h:
 
-/home/hans/git/esp32/esp32/components/hans_oled/include/oled.h:
-
-/home/hans/git/esp32/esp32/components/hans_sd_card/include/bsp_sd_card.h:
+/home/hans/git/esp32_learn/esp32/components/hans_sd_card/include/bsp_sd_card.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/sys/unistd.h:
 
@@ -281,4 +278,4 @@ esp32.o: /home/hans/git/esp32/esp32/main/esp32.c \
 /home/hans/esp/esp-idf/components/wear_levelling/include/wear_levelling.h:
 
 /home/hans/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h:
-/home/hans/git/esp32/esp32/main/./esp32.c:
+/home/hans/git/esp32_learn/esp32/main/./esp32.c:

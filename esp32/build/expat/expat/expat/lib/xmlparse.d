@@ -1,7 +1,7 @@
 expat/expat/lib/xmlparse.o: \
  /home/hans/esp/esp-idf/components/expat/expat/expat/lib/xmlparse.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/hans/esp/esp-idf/components/expat/port/include/expat_config.h \
@@ -16,7 +16,7 @@ expat/expat/lib/xmlparse.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/sys/time.h:
 

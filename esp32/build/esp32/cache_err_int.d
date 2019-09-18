@@ -1,7 +1,7 @@
 cache_err_int.o: /home/hans/esp/esp-idf/components/esp32/cache_err_int.c \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -45,7 +45,7 @@ cache_err_int.o: /home/hans/esp/esp-idf/components/esp32/cache_err_int.c \
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

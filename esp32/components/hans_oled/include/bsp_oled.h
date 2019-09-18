@@ -1,23 +1,31 @@
+/*
+* @file         bsp_oled.h 
+* @brief        ESP32操作OLED-I2C
+* @details      用户应用程序的入口文件,用户所有要实现的功能逻辑均是从该文件开始或者处理
+* @author       hans 
+* @par Copyright (c):  
+*               qq:304872739
+*/
 #ifndef BSP_OLED_H
 #define BSP_OLED_H "BSP_OLED_H"
 
-
+/* 
+=============
+头文件包含
+=============
+*/
 #include <stdio.h>
+#include "string.h"
+#include "stdlib.h"
 #include "esp_system.h"
 #include <esp_log.h>
 #include <freertos/FreeRTOS.h>
 #include "freertos/task.h"
 #include "driver/i2c.h"
+
+
 #include "fonts.h"
-
-
-
 #include "bsp_i2c.h"
-#include "oled.h"
-#include "fonts.h"
-
-
-
 
 /*
 ===========================
@@ -56,21 +64,57 @@
 #define SET17_COM_PIN_CONF       0xDA                     //--set com pins hardware configuration
 #define SET18_STG1               0x12                     
 #define SET19_vCOMH              0xDB                     //--set vcomh
-#define  SET20_vCOM_D_LEVVEL     0x40                     //Set VCOM Deselect Level
-#define  SET21_PAGE_ADDR_MODE    0x20                     //-Set Page Addressing Mode (0x00/0x01/0x02)
-#define  SET22_STG2              0x02                     //
-#define  SET23_CHARGE_PUMP       0x8D                     //--set Charge Pump enable/disable
-#define  SET24_DIS_              0x14                     //--set(0x10) disable
-#define  SET25_ENTIRE_DIS        0xA4                     // Disable Entire Display On (0xa4/0xa5)
-#define  SET26_INV_DIS           0xA6                     // Disable Inverse Display On (0xa6/a7) 
-#define  TURN_ON_CMD             0xAF                     //--turn on oled panel
+#define SET20_vCOM_D_LEVVEL     0x40                     //Set VCOM Deselect Level
+#define SET21_PAGE_ADDR_MODE    0x20                     //-Set Page Addressing Mode (0x00/0x01/0x02)
+#define SET22_STG2              0x02                     //
+#define SET23_CHARGE_PUMP       0x8D                     //--set Charge Pump enable/disable
+#define SET24_DIS_              0x14                     //--set(0x10) disable
+#define SET25_ENTIRE_DIS        0xA4                     // Disable Entire Display On (0xa4/0xa5)
+#define SET26_INV_DIS           0xA6                     // Disable Inverse Display On (0xa6/a7) 
+#define TURN_ON_CMD             0xAF                     //--turn on oled panel
 
 
+//显示1，擦除0
+typedef enum {
+	SSD1306_COLOR_BLACK = 0x00, /*!< Black color, no pixel */
+	SSD1306_COLOR_WHITE = 0x01  /*!< Pixel is set. Color depends on LCD */
+} SSD1306_COLOR_t;
+
+typedef struct {
+	uint16_t CurrentX;
+	uint16_t CurrentY;
+	uint8_t Inverted;
+	uint8_t Initialized;
+} SSD1306_t;
+
+
+//oled初始化
+void bsp_oled_init(void);
+// 向oled写命令
+int bsp_oled_write_cmd(uint8_t command);
+// 向oled写数据
+int bsp_oled_write_data(uint8_t data);
+// 向oled写长数据
+int bsp_oled_write_long_data(uint8_t *data,uint16_t len);
+// 将显存内容刷新到oled显示区
+void oled_update_screen(void);
+// 清屏
+void bsp_oled_clear(void);
+// 填屏,全显
+void bsp_oled_all_on(void);
+// 移动坐标
+void bsp_oled_gotoXY(uint16_t x, uint16_t y);
+// 向显存写入
+void bsp_oled_drawpixel(uint16_t x, uint16_t y, SSD1306_COLOR_t color);
+// 在x，y位置显示字符
+char bsp_oled_show_char(uint16_t x, uint16_t y,char ch, FontDef_t* Font, SSD1306_COLOR_t color);
+// 在x，y位置显示字符串
+char bsp_oled_show_str(uint16_t x, uint16_t y,char* str, FontDef_t* Font, SSD1306_COLOR_t color);
+// 在x，y位置显示一个点 
+void bsp_oled_to_set_poxel(int x,int y);
 //测试
 void bsp_oled_to_show(void);
-//oled初始化
-void oled_init(void);
-int oled_write_cmd(uint8_t command);
+void bsp_oled_to_text(int x,int y,int l,int h);
 
 
 #endif

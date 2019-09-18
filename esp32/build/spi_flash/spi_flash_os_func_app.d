@@ -1,7 +1,7 @@
 spi_flash_os_func_app.o: \
  /home/hans/esp/esp-idf/components/spi_flash/spi_flash_os_func_app.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -13,7 +13,7 @@ spi_flash_os_func_app.o: \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 

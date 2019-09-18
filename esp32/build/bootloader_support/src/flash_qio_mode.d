@@ -2,7 +2,7 @@ src/flash_qio_mode.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/src/flash_qio_mode.c \
  /home/hans/esp/esp-idf/components/bootloader_support/include_bootloader/flash_qio_mode.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -27,7 +27,7 @@ src/flash_qio_mode.o: \
 
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

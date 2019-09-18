@@ -1,6 +1,6 @@
 hw_random.o: /home/hans/esp/esp-idf/components/esp32/hw_random.c \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp32/clk.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/wdev_reg.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -23,7 +23,7 @@ hw_random.o: /home/hans/esp/esp-idf/components/esp32/hw_random.c \
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp32/clk.h:
 

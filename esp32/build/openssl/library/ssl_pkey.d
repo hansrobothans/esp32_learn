@@ -9,7 +9,7 @@ library/ssl_pkey.o: \
  /home/hans/esp/esp-idf/components/openssl/include/internal/ssl_methods.h \
  /home/hans/esp/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /home/hans/esp/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
@@ -35,7 +35,7 @@ library/ssl_pkey.o: \
 
 /home/hans/esp/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/openssl/include/platform/ssl_port.h:
 

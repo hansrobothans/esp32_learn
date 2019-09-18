@@ -1,7 +1,7 @@
 src/bootloader_init.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/src/bootloader_init.c \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -80,7 +80,7 @@ src/bootloader_init.o: \
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 

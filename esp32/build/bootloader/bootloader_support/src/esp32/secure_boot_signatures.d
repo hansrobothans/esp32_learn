@@ -1,6 +1,6 @@
 src/esp32/secure_boot_signatures.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/src/esp32/secure_boot_signatures.c \
- /home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -21,7 +21,7 @@ src/esp32/secure_boot_signatures.o: \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
  /home/hans/esp/esp-idf/components/bootloader/subproject/components/micro-ecc/micro-ecc/uECC.h
 
-/home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
 

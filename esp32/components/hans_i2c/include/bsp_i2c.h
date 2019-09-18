@@ -25,6 +25,8 @@
 #define ACK_VAL             0x0              					/*!< I2C ack value 应答*/
 #define NACK_VAL            0x1              					/*!< I2C nack value 不应答*/
 
-void i2c_init(void);
+
+// i2c 初始化
+void bsp_i2c_init(void);
 
 #endif

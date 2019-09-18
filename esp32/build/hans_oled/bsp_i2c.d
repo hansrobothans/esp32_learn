@@ -1,9 +1,10 @@
-bsp_i2c.o: /home/hans/git/esp32/esp32/components/hans_oled/bsp_i2c.c \
- /home/hans/git/esp32/esp32/components/hans_oled/include/bsp_i2c.h \
+bsp_i2c.o: \
+ /home/hans/git/esp32_learn/esp32/components/hans_oled/bsp_i2c.c \
+ /home/hans/git/esp32_learn/esp32/components/hans_oled/include/bsp_i2c.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
@@ -56,7 +57,7 @@ bsp_i2c.o: /home/hans/git/esp32/esp32/components/hans_oled/bsp_i2c.c \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
 
-/home/hans/git/esp32/esp32/components/hans_oled/include/bsp_i2c.h:
+/home/hans/git/esp32_learn/esp32/components/hans_oled/include/bsp_i2c.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_system.h:
 
@@ -64,7 +65,7 @@ bsp_i2c.o: /home/hans/git/esp32/esp32/components/hans_oled/bsp_i2c.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
@@ -167,4 +168,4 @@ bsp_i2c.o: /home/hans/git/esp32/esp32/components/hans_oled/bsp_i2c.c \
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
-/home/hans/git/esp32/esp32/components/hans_oled/./bsp_i2c.c:
+/home/hans/git/esp32_learn/esp32/components/hans_oled/./bsp_i2c.c:

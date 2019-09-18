@@ -4,7 +4,7 @@ esp-mqtt/mqtt_client.o: \
  /home/hans/esp/esp-idf/components/mqtt/esp-mqtt/lib/include/platform_esp32_idf.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -114,7 +114,7 @@ esp-mqtt/mqtt_client.o: \
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

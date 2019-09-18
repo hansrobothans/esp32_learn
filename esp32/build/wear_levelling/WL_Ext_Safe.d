@@ -4,7 +4,7 @@ WL_Ext_Safe.o: \
  /home/hans/esp/esp-idf/components/wear_levelling/private_include/WL_Flash.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h \
  /home/hans/esp/esp-idf/components/wear_levelling/private_include/WL_Config.h \
  /home/hans/esp/esp-idf/components/wear_levelling/private_include/WL_State.h \
@@ -22,7 +22,7 @@ WL_Ext_Safe.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/wear_levelling/private_include/Flash_Access.h:
 

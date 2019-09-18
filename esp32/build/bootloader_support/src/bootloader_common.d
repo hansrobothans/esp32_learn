@@ -1,7 +1,7 @@
 src/bootloader_common.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/src/bootloader_common.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -41,7 +41,7 @@ src/bootloader_common.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h:
 

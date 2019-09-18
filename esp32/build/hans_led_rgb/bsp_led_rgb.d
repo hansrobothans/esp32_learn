@@ -1,10 +1,10 @@
 bsp_led_rgb.o: \
- /home/hans/git/esp32/esp32/components/hans_led_rgb/bsp_led_rgb.c \
- /home/hans/git/esp32/esp32/components/hans_led_rgb/include/bsp_led_rgb.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_led_rgb/bsp_led_rgb.c \
+ /home/hans/git/esp32_learn/esp32/components/hans_led_rgb/include/bsp_led_rgb.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -65,7 +65,7 @@ bsp_led_rgb.o: \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
 
-/home/hans/git/esp32/esp32/components/hans_led_rgb/include/bsp_led_rgb.h:
+/home/hans/git/esp32_learn/esp32/components/hans_led_rgb/include/bsp_led_rgb.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -73,7 +73,7 @@ bsp_led_rgb.o: \
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -192,4 +192,4 @@ bsp_led_rgb.o: \
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
-/home/hans/git/esp32/esp32/components/hans_led_rgb/./bsp_led_rgb.c:
+/home/hans/git/esp32_learn/esp32/components/hans_led_rgb/./bsp_led_rgb.c:

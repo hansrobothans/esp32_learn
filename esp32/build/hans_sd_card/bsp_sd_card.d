@@ -1,10 +1,10 @@
 bsp_sd_card.o: \
- /home/hans/git/esp32/esp32/components/hans_sd_card/bsp_sd_card.c \
- /home/hans/git/esp32/esp32/components/hans_sd_card/include/bsp_sd_card.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_sd_card/bsp_sd_card.c \
+ /home/hans/git/esp32_learn/esp32/components/hans_sd_card/include/bsp_sd_card.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/unistd.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
@@ -77,7 +77,7 @@ bsp_sd_card.o: \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
  /home/hans/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h
 
-/home/hans/git/esp32/esp32/components/hans_sd_card/include/bsp_sd_card.h:
+/home/hans/git/esp32_learn/esp32/components/hans_sd_card/include/bsp_sd_card.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/sys/unistd.h:
 
@@ -85,7 +85,7 @@ bsp_sd_card.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 
@@ -228,4 +228,4 @@ bsp_sd_card.o: \
 /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
 /home/hans/esp/esp-idf/components/sdmmc/include/sdmmc_cmd.h:
-/home/hans/git/esp32/esp32/components/hans_sd_card/./bsp_sd_card.c:
+/home/hans/git/esp32_learn/esp32/components/hans_sd_card/./bsp_sd_card.c:

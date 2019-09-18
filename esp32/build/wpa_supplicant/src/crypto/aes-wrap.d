@@ -2,7 +2,7 @@ src/crypto/aes-wrap.o: \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/crypto/aes-wrap.c \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/include/utils/common.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/port/include/os.h \
@@ -33,7 +33,7 @@ src/crypto/aes-wrap.o: \
 
 /home/hans/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

@@ -1,6 +1,6 @@
 port/esp_sha.o: /home/hans/esp/esp-idf/components/mbedtls/port/esp_sha.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/mbedtls/port/include/esp32/sha.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/sha.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_types.h \
@@ -15,7 +15,7 @@ port/esp_sha.o: /home/hans/esp/esp-idf/components/mbedtls/port/esp_sha.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/mbedtls/port/include/esp32/sha.h:
 

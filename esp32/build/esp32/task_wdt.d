@@ -1,5 +1,5 @@
 task_wdt.o: /home/hans/esp/esp-idf/components/esp32/task_wdt.c \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -56,7 +56,7 @@ task_wdt.o: /home/hans/esp/esp-idf/components/esp32/task_wdt.c \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_task_wdt.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_private/system_internal.h
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

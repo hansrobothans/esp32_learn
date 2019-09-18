@@ -1,5 +1,5 @@
 esp32/emac_hal.o: /home/hans/esp/esp-idf/components/soc/esp32/emac_hal.c \
- /home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
@@ -24,7 +24,7 @@ esp32/emac_hal.o: /home/hans/esp/esp-idf/components/soc/esp32/emac_hal.c \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/emac_mac_struct.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/emac_ext_struct.h
 
-/home/hans/git/esp32/esp32/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 

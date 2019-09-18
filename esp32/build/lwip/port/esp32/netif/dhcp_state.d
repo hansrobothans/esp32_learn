@@ -1,7 +1,7 @@
 port/esp32/netif/dhcp_state.o: \
  /home/hans/esp/esp-idf/components/lwip/port/esp32/netif/dhcp_state.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -88,7 +88,7 @@ port/esp32/netif/dhcp_state.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/nvs_flash/include/nvs.h:
 

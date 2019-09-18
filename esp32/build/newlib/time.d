@@ -4,7 +4,7 @@ time.o: /home/hans/esp/esp-idf/components/newlib/time.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -65,7 +65,7 @@ time.o: /home/hans/esp/esp-idf/components/newlib/time.c \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

@@ -2,7 +2,7 @@ event_send.o: /home/hans/esp/esp-idf/components/esp_event/event_send.c \
  /home/hans/esp/esp-idf/components/esp_event/include/esp_event.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/esp32/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -74,7 +74,7 @@ event_send.o: /home/hans/esp/esp-idf/components/esp_event/event_send.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/esp32/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/esp32/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
