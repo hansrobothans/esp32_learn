@@ -113,7 +113,9 @@ char bsp_oled_show_str(uint16_t x, uint16_t y,char* str, FontDef_t* Font, SSD130
 // 在x，y位置显示一个点 
 void bsp_oled_to_set_poxel(int x,int y);
 //测试
+// 显示字符和字符串
 void bsp_oled_to_show(void);
+// 在xy到x+l,y+h
 void bsp_oled_to_text(int x,int y,int l,int h);
 
 

@@ -17,9 +17,10 @@
 #include "sdkconfig.h"
 
 // 功能支持库
-#include "bsp_led_rgb.h"
-#include "bsp_oled.h"
-#include "bsp_sd_card.h"
+// #include "bsp_led_rgb.h"
+// #include "bsp_oled.h"
+// #include "bsp_sd_card.h"
+#include "bsp_wifi.h"
 
 
 #endif//ESP32_H

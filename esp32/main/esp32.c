@@ -14,26 +14,31 @@
 
 void app_main()
 {
-
-
-	//初始化flash
-    //确认flash没有问题
-    // esp_err_t ret = nvs_flash_init();
-    // if (ret == ESP_ERR_NVS_NO_FREE_PAGES)
-    // {
-    //     ESP_ERROR_CHECK(nvs_flash_erase());
-    //     ret = nvs_flash_init();
-    // }
-    // ESP_ERROR_CHECK(ret);
+    // 初始化flash
+    // 确认flash没有问题
+    esp_err_t ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES)
+    {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(ret);
     // 测试流水灯的
     // int delay_ms = 1000;
     // bsp_led_rgb_pipeline_lamp_task(&delay_ms);
 
     //测试oled显示屏的
     // bsp_oled_to_show();
-    bsp_oled_to_text(5,10,15,20);
+    // bsp_oled_to_text(5,10,15,20);
 
     //测试sd卡
     // sd_text();
     // sd_ex();
+
+    // 测试创建wifi
+    //开源一小步
+    // bsp_wifi_init_softap();
+    //官方例程
+    bsp_wifi_init_sta();
+
 }

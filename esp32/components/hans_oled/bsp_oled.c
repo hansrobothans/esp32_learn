@@ -374,8 +374,6 @@ void bsp_oled_to_set_poxel(int x,int y)
 void bsp_oled_to_text(int x,int y,int l,int h)
 {
   int i=0,j=0;
-  int m=10,n=10;
-
   bsp_oled_init();
   for(i=0;i<l;i++)
     for(j=0;j<h;j++)
@@ -383,24 +381,6 @@ void bsp_oled_to_text(int x,int y,int l,int h)
       bsp_oled_to_set_poxel(x+i,y+j);
     }
   bsp_oled_update_screen(); 
-}
-
-void bsp_oled_to_set_poxel(int x,int y)
-{
-  int h_s = (y-1)/(SSD1306_HEIGHT / 8);//计算行数
-  int h_p = (y-1)%(SSD1306_HEIGHT / 8);//计算行偏
-  int oled_array_index = h_s * SSD1306_WIDTH + x - 1;//计算数组下标
-  switch (h_p)
-  {
-    case 0: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x01;break;
-    case 1: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x02;break;
-    case 2: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x04;break;
-    case 3: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x08;break;
-    case 4: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x10;break;
-    case 5: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x20;break;
-    case 6: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x40;break;
-    case 7: g_oled_buffer[oled_array_index] = g_oled_buffer[oled_array_index] | 0x80;break;
-  }
 }
 
 void bsp_oled_to_show(void)
