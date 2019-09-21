@@ -1,5 +1,5 @@
 spiram.o: /home/hans/esp/esp-idf/components/esp32/spiram.c \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -56,7 +56,7 @@ spiram.o: /home/hans/esp/esp-idf/components/esp32/spiram.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/cache.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 

@@ -25,24 +25,41 @@
 // 灯灭
 #define off 0
 
-QueueHandle_t bsp_led_rgb_xQueue;
+extern QueueHandle_t bsp_led_rgb_xQueue;
+
+typedef struct led_message
+{
+	int time;
+	char data;
+}bsp_led_message;
+
 
 
 // 初始化三个灯的引脚
 void bsp_led_rgb_init(void);
+
 //三色流水灯
 void bsp_led_rgb_pipeline_lamp(void * pvParameters);
+
 // 使用多任务创建流水灯
 void bsp_led_rgb_pipeline_lamp_task(void * pvParameters);
+
 // 选择三色灯亮
 void bsp_led_rgb_set_rgb(void * pvParameters);
+
 // 从队列接收消息来控制三色灯灯功能任务函数
 void bsp_led_rgb_queue_receive_set_rgb(void * pvParameters);
-// 创建从队列接收消息来控制三色灯灯功能任务函数
-void bsp_led_rgb_queue_receive_set_rgb_task(void * pvParameters);
+
 // 发送消息到队列来控制三色灯灯功能任务函数（流水效果）
 void bsp_led_rgb_queue_send_set_rgb(void * pvParameters);
+
+// 创建从队列接收消息来控制三色灯灯功能任务函数
+void bsp_led_rgb_queue_receive_set_rgb_task(void * pvParameters);
+
 // 创建发送消息到队列来控制三色灯灯功能任务函数（流水效果）
 void bsp_led_rgb_queue_send_set_rgb_task(void * pvParameters);
+
+
+
 
 #endif

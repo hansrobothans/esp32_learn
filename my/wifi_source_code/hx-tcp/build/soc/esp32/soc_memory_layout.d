@@ -3,7 +3,7 @@ esp32/soc_memory_layout.o: \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/hans/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
@@ -16,7 +16,7 @@ esp32/soc_memory_layout.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

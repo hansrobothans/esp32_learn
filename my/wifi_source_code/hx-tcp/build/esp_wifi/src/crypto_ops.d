@@ -5,7 +5,7 @@ src/crypto_ops.o: \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/include/utils/wpabuf.h \
@@ -32,7 +32,7 @@ src/crypto_ops.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

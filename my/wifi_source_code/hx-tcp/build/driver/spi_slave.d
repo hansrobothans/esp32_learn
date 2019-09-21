@@ -2,7 +2,7 @@ spi_slave.o: /home/hans/esp/esp-idf/components/driver/spi_slave.c \
  /home/hans/esp/esp-idf/components/soc/include/hal/spi_ll.h \
  /home/hans/esp/esp-idf/components/soc/include/hal/hal_defs.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/hans/esp/esp-idf/components/soc/include/soc/spi_periph.h \
@@ -82,7 +82,7 @@ spi_slave.o: /home/hans/esp/esp-idf/components/driver/spi_slave.c \
 
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

@@ -1,6 +1,6 @@
 cache_utils.o: /home/hans/esp/esp-idf/components/spi_flash/cache_utils.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -55,7 +55,7 @@ cache_utils.o: /home/hans/esp/esp-idf/components/spi_flash/cache_utils.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

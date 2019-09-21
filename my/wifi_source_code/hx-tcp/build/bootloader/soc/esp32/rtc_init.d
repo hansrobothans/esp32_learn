@@ -14,7 +14,7 @@ esp32/rtc_init.o: /home/hans/esp/esp-idf/components/soc/esp32/rtc_init.c \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp32/dport_access.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -65,7 +65,7 @@ esp32/rtc_init.o: /home/hans/esp/esp-idf/components/soc/esp32/rtc_init.c \
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp32/dport_access.h:
 

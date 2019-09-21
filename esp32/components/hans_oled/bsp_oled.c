@@ -316,7 +316,7 @@ char bsp_oled_show_char(uint16_t x,uint16_t y,char ch, FontDef_t* Font, SSD1306_
  * 在x，y位置显示字符串 
  * @param[in]   x    显示坐标x 
  * @param[in]   y    显示坐标y 
- * @param[in]   str   要显示的字符串
+ * @param[in]   str   要显示的字符串--------横向最多显示18个Font_7x10类型的字母（128*64像素），18*7=126
  * @param[in]   font 显示的字形
  * @param[in]   color 颜色  1显示 0不显示
  * @retval      
@@ -371,25 +371,88 @@ void bsp_oled_to_set_poxel(int x,int y)
   }
 }
 
-void bsp_oled_to_text(int x,int y,int l,int h)
+
+/** 
+ * 在x，y位置显示一个矩形 
+ * @param[in]   x    坐标x 
+ * @param[in]   y    坐标y 
+ * @param[in]   l    矩形宽
+ * @param[in]   h    矩形高
+ * @retval      
+ *              如需清屏，请自行调用清屏函数清屏                       
+ * @par         修改日志 
+ *               Ver0.0.1:
+                     hans, 2019/09/18, 初始化版本\n 
+ */
+void bsp_oled_to_show_rectangle(int x,int y,int l,int h)
 {
   int i=0,j=0;
   bsp_oled_init();
-  for(i=0;i<l;i++)
-    for(j=0;j<h;j++)
-    {
-      bsp_oled_to_set_poxel(x+i,y+j);
-    }
+  if(x+l<127 && y+h<63)
+  {
+    for(i=0;i<l;i++)
+      for(j=0;j<h;j++)
+      {
+        bsp_oled_to_set_poxel(x+i,y+j);
+      }
+  }
+  else
+  {
+    bsp_oled_show_str(0,0,  "please show ", &font_size, 1);
+    bsp_oled_show_str(0,10, "rectangle with: ", &font_size, 1);
+    bsp_oled_show_str(0,20, "x + l < 128", &font_size, 1);
+    bsp_oled_show_str(0,30, "y + h < 64", &font_size, 1);
+    bsp_oled_show_str(0,40, "thank you", &font_size, 1);
+    bsp_oled_show_str(0,50, "have this API", &font_size, 1);
+  }
+
   bsp_oled_update_screen(); 
 }
 
 void bsp_oled_to_show(void)
 {
   bsp_oled_init();
-  // bsp_oled_show_str(0,0,  "I LOVE YOU", &Font_7x10, 1);
-  // bsp_oled_show_str(0,15, "WANG CHEN", &Font_7x10, 1);
-  // bsp_oled_show_str(0,30, "for ever ever", &Font_7x10, 1);
-  // bsp_oled_show_str(0,45, "shazi",&Font_7x10,1);
-  bsp_oled_show_char(15,15,'a',&Font_7x10, 1);
+  bsp_oled_show_str(0,0,  "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,10, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,20, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,30, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,40, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,50, "123456789012345678", &font_size, 1);
+  // bsp_oled_show_char(0,15,'a',&font_size, 1);
   vTaskDelay(10000 / portTICK_PERIOD_MS);
 }
+
+/*
+* 接收oled队列发出的消息，x
+* @param[in]      void * pvParameters              :任务实现函数模板参数
+* @retval         void                             :无
+* @note        修改日志 
+*               Ver0.0.1:
+                    hans, 2019/09/04, 初始化版本\n 
+*/
+// void bep_tcp_recive_send_to_led(void * pvParameters)
+// {
+
+//   // printf("\n\n\n\n\n\n\n\na\n\n\n\n\n\n\n\n");
+//   // 接受数据的结果
+//   BaseType_t xResult = 0;
+//   // tcp接收到的队列消息变量
+//   bsp_tcp_recive_message bsp_tcp_recive_message_v;
+//   // 发给led_rgb队列消息变量
+//   bsp_led_message led_message_send = {0,' '};
+//   while(1)
+//   {
+//     // 接受数据
+//     xResult = xQueueReceive(bsp_tcp_recive_xQueue,(void *)(&bsp_tcp_recive_message_v),( TickType_t ) 10 ) ;
+//     led_message_send.data = bsp_tcp_recive_message_v.data[0];
+//     // led_message_send.data = 'g';
+//     // 判断是否接受数据成功
+//     if(xResult == pdPASS)
+//     {
+//       printf("接收到消息队列数据led_chr_get1 = %c\r\n", bsp_tcp_recive_message_v.data[0]);
+//       // 将接收到的数据发送出去
+//       xQueueSend(bsp_led_rgb_xQueue,(void *) &led_message_send,0);
+//     }
+//     vTaskDelay(1000 / portTICK_PERIOD_MS);
+//   } 
+// }

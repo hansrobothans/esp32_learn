@@ -3,7 +3,7 @@ src/idf/bootloader_sha.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_sha.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /home/hans/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config.h \
@@ -17,7 +17,7 @@ src/idf/bootloader_sha.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h:
 

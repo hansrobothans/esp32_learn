@@ -1,7 +1,7 @@
 libsodium/src/libsodium/randombytes/randombytes.o: \
  /home/hans/esp/esp-idf/components/libsodium/libsodium/src/libsodium/randombytes/randombytes.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h \
  /home/hans/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/export.h \
  /home/hans/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/randombytes.h \
@@ -11,7 +11,7 @@ libsodium/src/libsodium/randombytes/randombytes.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/libsodium/libsodium/src/libsodium/include/sodium/crypto_stream_chacha20.h:
 

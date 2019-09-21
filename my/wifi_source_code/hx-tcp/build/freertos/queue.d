@@ -1,6 +1,6 @@
 queue.o: /home/hans/esp/esp-idf/components/freertos/queue.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -38,7 +38,7 @@ queue.o: /home/hans/esp/esp-idf/components/freertos/queue.c \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

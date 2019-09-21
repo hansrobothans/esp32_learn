@@ -6,7 +6,7 @@ esp32/gdbstub_esp32.o: \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
@@ -42,7 +42,7 @@ esp32/gdbstub_esp32.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h:
 

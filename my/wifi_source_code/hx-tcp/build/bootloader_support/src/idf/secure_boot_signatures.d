@@ -1,6 +1,6 @@
 src/idf/secure_boot_signatures.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/src/idf/secure_boot_signatures.c \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -34,7 +34,7 @@ src/idf/secure_boot_signatures.o: \
  /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
  /home/hans/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
 

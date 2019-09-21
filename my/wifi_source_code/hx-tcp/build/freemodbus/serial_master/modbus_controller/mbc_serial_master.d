@@ -2,7 +2,7 @@ serial_master/modbus_controller/mbc_serial_master.o: \
  /home/hans/esp/esp-idf/components/freemodbus/serial_master/modbus_controller/mbc_serial_master.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -79,7 +79,7 @@ serial_master/modbus_controller/mbc_serial_master.o: \
 
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

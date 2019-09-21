@@ -1,7 +1,7 @@
 debug_helpers.o: /home/hans/esp/esp-idf/components/xtensa/debug_helpers.c \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
  /home/hans/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h \
@@ -22,7 +22,7 @@ debug_helpers.o: /home/hans/esp/esp-idf/components/xtensa/debug_helpers.c \
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h:
 

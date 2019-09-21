@@ -1,5 +1,5 @@
 tcp_bsp.o: \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/components/bsp/tcp_bsp.c \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/components/bsp/tcp_bsp.c \
  /home/hans/esp/esp-idf/components/lwip/port/esp32/include/sys/socket.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h \
@@ -8,7 +8,7 @@ tcp_bsp.o: \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/hans/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_task.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -93,7 +93,7 @@ tcp_bsp.o: \
  /home/hans/esp/esp-idf/components/esp_event/include/esp_event_loop.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h
 
 /home/hans/esp/esp-idf/components/lwip/port/esp32/include/sys/socket.h:
 
@@ -111,7 +111,7 @@ tcp_bsp.o: \
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_task.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
@@ -281,5 +281,5 @@ tcp_bsp.o: \
 
 /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h:
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/components/bsp/./tcp_bsp.c:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/components/bsp/./tcp_bsp.c:

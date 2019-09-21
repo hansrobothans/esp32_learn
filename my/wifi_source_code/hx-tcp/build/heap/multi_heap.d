@@ -1,6 +1,6 @@
 multi_heap.o: /home/hans/esp/esp-idf/components/heap/multi_heap.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/heap/include/multi_heap.h \
  /home/hans/esp/esp-idf/components/heap/multi_heap_internal.h \
  /home/hans/esp/esp-idf/components/heap/multi_heap_platform.h \
@@ -38,7 +38,7 @@ multi_heap.o: /home/hans/esp/esp-idf/components/heap/multi_heap.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/heap/include/multi_heap.h:
 

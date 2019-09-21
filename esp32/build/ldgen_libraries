@@ -28,10 +28,13 @@
  /home/hans/git/esp32_learn/esp32/build/fatfs/libfatfs.a
  /home/hans/git/esp32_learn/esp32/build/freemodbus/libfreemodbus.a
  /home/hans/git/esp32_learn/esp32/build/freertos/libfreertos.a
+ /home/hans/git/esp32_learn/esp32/build/hans_esp32/libhans_esp32.a
  /home/hans/git/esp32_learn/esp32/build/hans_i2c/libhans_i2c.a
  /home/hans/git/esp32_learn/esp32/build/hans_led_rgb/libhans_led_rgb.a
  /home/hans/git/esp32_learn/esp32/build/hans_oled/libhans_oled.a
+ /home/hans/git/esp32_learn/esp32/build/hans_queue/libhans_queue.a
  /home/hans/git/esp32_learn/esp32/build/hans_sd_card/libhans_sd_card.a
+ /home/hans/git/esp32_learn/esp32/build/hans_tcp/libhans_tcp.a
  /home/hans/git/esp32_learn/esp32/build/hans_wifi/libhans_wifi.a
  /home/hans/git/esp32_learn/esp32/build/heap/libheap.a
  /home/hans/git/esp32_learn/esp32/build/idf_test/libidf_test.a

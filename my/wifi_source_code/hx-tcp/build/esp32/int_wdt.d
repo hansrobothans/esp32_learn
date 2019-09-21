@@ -1,5 +1,5 @@
 int_wdt.o: /home/hans/esp/esp-idf/components/esp32/int_wdt.c \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -49,7 +49,7 @@ int_wdt.o: /home/hans/esp/esp-idf/components/esp32/int_wdt.c \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_int_wdt.h
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

@@ -6,7 +6,7 @@ panic.o: /home/hans/esp/esp-idf/components/esp32/panic.c \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -104,7 +104,7 @@ panic.o: /home/hans/esp/esp-idf/components/esp32/panic.c \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

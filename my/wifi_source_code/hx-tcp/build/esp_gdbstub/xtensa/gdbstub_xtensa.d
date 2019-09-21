@@ -13,7 +13,7 @@ xtensa/gdbstub_xtensa.o: \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
  /home/hans/esp/esp-idf/components/esp_gdbstub/esp32/gdbstub_target_config.h \
  /home/hans/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/hans/esp/esp-idf/components/soc/include/soc/soc_memory_layout.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -48,7 +48,7 @@ xtensa/gdbstub_xtensa.o: \
 
 /home/hans/esp/esp-idf/components/esp_gdbstub/private_include/esp_gdbstub_common.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 

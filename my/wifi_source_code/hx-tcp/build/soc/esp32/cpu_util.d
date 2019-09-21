@@ -1,6 +1,6 @@
 esp32/cpu_util.o: /home/hans/esp/esp-idf/components/soc/esp32/cpu_util.c \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/cpu.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -24,7 +24,7 @@ esp32/cpu_util.o: /home/hans/esp/esp-idf/components/soc/esp32/cpu_util.c \
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/cpu.h:
 

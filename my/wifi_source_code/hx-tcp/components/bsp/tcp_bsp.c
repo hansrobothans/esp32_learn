@@ -20,7 +20,6 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
-#include "freertos/queue.h"
 #include "esp_wifi.h"
 #include "esp_event_loop.h"
 #include "esp_log.h"
@@ -35,6 +34,8 @@ EventGroupHandle_t tcp_event_group;                     //wifi建立成功信号
 //socket
 static int server_socket = 0;                           //服务器socket
 static struct sockaddr_in server_addr;                  //server地址
+static struct sockaddr_in client_addr;                  //client地址
+static unsigned int socklen = sizeof(client_addr);      //地址长度
 static int connect_socket = 0;                          //连接socket
 bool g_rxtx_need_restart = false;                       //异常后，重新连接标记
 
@@ -120,42 +121,21 @@ void recv_data(void *pvParameters)
 {
     int len = 0;            //长度
     char databuff[1024];    //缓存
-
-    char databuff_char = ' ';
-
     while (1)
     {
         //清空缓存
         memset(databuff, 0x00, sizeof(databuff));
         //读取接收数据
         len = recv(connect_socket, databuff, sizeof(databuff), 0);
-        
         g_rxtx_need_restart = false;
-
         if (len > 0)
         {
-            printf("%c\n", databuff[0]);
-            databuff_char = databuff[0];
-            for(int i = 1;databuff_char != '#';i++)
-            {
-                printf("%c",databuff_char);
-                if(xQueueSend(led_r_g_b_xQueue,(void *) &databuff_char,0) != pdPASS )
-
-                    printf("向xQueue1发送数据失败\r\n");
-
-                else
-
-                    printf("向xQueue1发送数据成功%c\r\n",databuff_char);
-                databuff_char = databuff[i];
-            }
-
             //g_total_data += len;
             //打印接收到的数组
             ESP_LOGI(TAG, "recvData: %s", databuff);
-
             //接收数据回发
             send(connect_socket, databuff, strlen(databuff), 0);
-            // sendto(connect_socket, databuff , sizeof(databuff), 0, (struct sockaddr *) &remote_addr,sizeof(remote_addr));
+            //sendto(connect_socket, databuff , sizeof(databuff), 0, (struct sockaddr *) &remote_addr,sizeof(remote_addr));
         }
         else
         {
@@ -164,16 +144,77 @@ void recv_data(void *pvParameters)
             //服务器故障，标记重连
             g_rxtx_need_restart = true;
             
-
+#if TCP_SERVER_CLIENT_OPTION
             //服务器接收异常，不用break后close socket,因为有其他client
             //break;
             vTaskDelete(NULL);
+#else
+            //client
+            break;
+#endif
         }
     }
     close_socket();
     //标记重连
     g_rxtx_need_restart = true;
     vTaskDelete(NULL);
+}
+
+/*
+* 建立tcp server
+* @param[in]   isCreatServer  	    :首次true，下次false
+* @retval      void                 :无
+* @note        修改日志 
+*               Ver0.0.1:
+                    hx-zsj, 2018/08/06, 初始化版本\n 
+*/
+esp_err_t create_tcp_server(bool isCreatServer)
+{
+    //首次建立server
+    if (isCreatServer)
+    {
+        ESP_LOGI(TAG, "server socket....,port=%d", TCP_PORT);
+        //新建socket
+        server_socket = socket(AF_INET, SOCK_STREAM, 0);
+        if (server_socket < 0)
+        {
+            show_socket_error_reason("create_server", server_socket);
+            //新建失败后，关闭新建的socket，等待下次新建
+            close(server_socket);
+            return ESP_FAIL;
+        }
+        //配置新建server socket参数
+        server_addr.sin_family = AF_INET;
+        server_addr.sin_port = htons(TCP_PORT);
+        server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
+        //bind:地址的绑定
+        if (bind(server_socket, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0)
+        {
+            show_socket_error_reason("bind_server", server_socket);
+            //bind失败后，关闭新建的socket，等待下次新建
+            close(server_socket);
+            return ESP_FAIL;
+        }
+    }
+    //listen，下次时，直接监听
+    if (listen(server_socket, 5) < 0)
+    {
+        show_socket_error_reason("listen_server", server_socket);
+        //listen失败后，关闭新建的socket，等待下次新建
+        close(server_socket);
+        return ESP_FAIL;
+    }
+    //accept，搜寻全连接队列
+    connect_socket = accept(server_socket, (struct sockaddr *)&client_addr, &socklen);
+    if (connect_socket < 0)
+    {
+        show_socket_error_reason("accept_server", connect_socket);
+        //accept失败后，关闭新建的socket，等待下次新建
+        close(server_socket);
+        return ESP_FAIL;
+    }
+    ESP_LOGI(TAG, "tcp connection established!");
+    return ESP_OK;
 }
 
 
@@ -251,6 +292,41 @@ void wifi_init_sta()
              GATEWAY_SSID, GATEWAY_PAS);
 }
 
+
+/*
+* WIFI作为AP的初始化
+* @param[in]   void  		       :无
+* @retval      void                :无
+* @note        修改日志 
+*               Ver0.0.1:
+                    hx-zsj, 2018/08/06, 初始化版本\n 
+*/
+void wifi_init_softap()
+{
+    tcp_event_group = xEventGroupCreate();
+    tcpip_adapter_init();
+    ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
+    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+    wifi_config_t wifi_config = {
+        .ap = {
+            .ssid = SOFT_AP_SSID,
+            .password = SOFT_AP_PAS,
+            .ssid_len = 0,
+            .max_connection = SOFT_AP_MAX_CONNECT,
+            .authmode = WIFI_AUTH_WPA_WPA2_PSK
+        }
+    };
+    if (strlen(SOFT_AP_PAS) == 0)
+    {
+        wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+    }
+	ESP_ERROR_CHECK( esp_wifi_set_mode(WIFI_MODE_AP) );
+    ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config));
+    ESP_ERROR_CHECK(esp_wifi_start());
+    ESP_LOGI(TAG, "SoftAP set finish,SSID:%s password:%s \n",
+             wifi_config.ap.ssid, wifi_config.ap.password);
+}
 /*
 * 获取socket错误代码
 * @param[in]   socket  		       :socket编号
@@ -304,6 +380,18 @@ int show_socket_error_reason(const char *str, int socket)
 int check_working_socket()
 {
     int ret;
+#if EXAMPLE_ESP_TCP_MODE_SERVER
+    ESP_LOGD(TAG, "check server_socket");
+    ret = get_socket_error_code(server_socket);
+    if (ret != 0)
+    {
+        ESP_LOGW(TAG, "server socket error %d %s", ret, strerror(ret));
+    }
+    if (ret == ECONNRESET)
+    {
+        return ret;
+    }
+#endif
     ESP_LOGD(TAG, "check connect_socket");
     ret = get_socket_error_code(connect_socket);
     if (ret != 0)

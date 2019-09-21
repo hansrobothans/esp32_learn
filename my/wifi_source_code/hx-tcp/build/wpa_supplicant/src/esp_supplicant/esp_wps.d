@@ -2,7 +2,7 @@ src/esp_supplicant/esp_wps.o: \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/esp_supplicant/esp_wps.c \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/rsn_supp/wpa.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/include/utils/common.h \
@@ -112,7 +112,7 @@ src/esp_supplicant/esp_wps.o: \
 
 /home/hans/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 

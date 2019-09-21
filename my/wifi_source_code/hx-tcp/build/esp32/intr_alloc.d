@@ -1,5 +1,5 @@
 intr_alloc.o: /home/hans/esp/esp-idf/components/esp32/intr_alloc.c \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -41,7 +41,7 @@ intr_alloc.o: /home/hans/esp/esp-idf/components/esp32/intr_alloc.c \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_ipc.h
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

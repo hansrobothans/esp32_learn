@@ -1,6 +1,6 @@
 esp32/rtc_time.o: /home/hans/esp/esp-idf/components/soc/esp32/rtc_time.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/rtc.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -22,7 +22,7 @@ esp32/rtc_time.o: /home/hans/esp/esp-idf/components/soc/esp32/rtc_time.c \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/rtc.h:
 

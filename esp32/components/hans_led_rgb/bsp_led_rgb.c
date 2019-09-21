@@ -1,5 +1,10 @@
 #include "bsp_led_rgb.h"
 
+QueueHandle_t bsp_led_rgb_xQueue;
+
+
+
+
 /*
 * 三色灯引脚初始化
 * @param[in]   void             :无
@@ -158,16 +163,15 @@ void bsp_led_rgb_queue_receive_set_rgb(void * pvParameters)
 {
   // // 将传入参数转化为正确类型，并接收
   // int delay_ms = *((int *)pvParameters);
-  int delay_ms = 100;
   // 接受数据的结果
   BaseType_t xResult = 0;
   // 接收的字符
-  char led_chr_get = ' ';
+  bsp_led_message led_message_get = {0,' '};
 
-  // // 队列句柄()在头文件定义
+  // // 队列句柄()在文件头定义
   // QueueHandle_t bsp_led_rgb_xQueue;
   // /* 创建队列，其大小可包含10个元素Data */
-  bsp_led_rgb_xQueue = xQueueCreate(10, sizeof(char));
+  bsp_led_rgb_xQueue = xQueueCreate(10, sizeof(bsp_led_message));
 
   // 判断是否创建成功
   if(bsp_led_rgb_xQueue != 0)
@@ -175,16 +179,15 @@ void bsp_led_rgb_queue_receive_set_rgb(void * pvParameters)
     while(1)
     {
       // 接受数据
-      xResult = xQueueReceive(bsp_led_rgb_xQueue,(void *)&led_chr_get,0);
+      xResult = xQueueReceive(bsp_led_rgb_xQueue,(void *)&led_message_get,( TickType_t ) 10);
 
       // 判断是否接受数据成功
       if(xResult == pdPASS)
       {
         // printf("接收到消息队列数据led_chr_get = %c\r\n", led_chr_get);
         // 将接收到的数据发送出去
-        bsp_led_rgb_set_rgb(&led_chr_get);
+        bsp_led_rgb_set_rgb(&led_message_get.data);
       }
-      vTaskDelay(delay_ms / portTICK_RATE_MS);
     } 
   } 
 }
@@ -204,7 +207,7 @@ void bsp_led_rgb_queue_receive_set_rgb_task(void * pvParameters)
   xTaskCreate(
       &bsp_led_rgb_queue_receive_set_rgb,/* 任务函数 */
       "bsp_led_rgb_queue_receive_set_rgb",/* 任务名称 */
-      3000,/* 任务的堆栈大小 */
+      4906,/* 任务的堆栈大小 */
       NULL,/* 任务的参数 */
       5,/* 任务的优先级 */
       NULL);/* 跟踪创建的任务的任务句柄 */
@@ -224,20 +227,20 @@ void bsp_led_rgb_queue_send_set_rgb(void * pvParameters)
   // 定义流水灯延时时间
   int delay_ms = 1000;
   // 发送的字符
-  char led_chr_send = ' ';
+  bsp_led_message led_message_send = {0,' '};
   // 设置为流水灯效果
   while(1)
   {
-    led_chr_send = 'r';
-    xQueueSend(bsp_led_rgb_xQueue,(void *) &led_chr_send,0);
+    led_message_send.data = 'r';
+    xQueueSend(bsp_led_rgb_xQueue,(void *) &led_message_send,0);
     vTaskDelay(delay_ms / portTICK_PERIOD_MS);
 
-    led_chr_send = 'g';
-    xQueueSend(bsp_led_rgb_xQueue,(void *) &led_chr_send,0);
+    led_message_send.data = 'g';
+    xQueueSend(bsp_led_rgb_xQueue,(void *) &led_message_send,0);
     vTaskDelay(delay_ms / portTICK_PERIOD_MS);
 
-    led_chr_send = 'b';
-    xQueueSend(bsp_led_rgb_xQueue,(void *) &led_chr_send,0);
+    led_message_send.data = 'b';
+    xQueueSend(bsp_led_rgb_xQueue,(void *) &led_message_send,0);
     vTaskDelay(delay_ms / portTICK_PERIOD_MS);
   }
 }

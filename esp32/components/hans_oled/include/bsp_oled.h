@@ -73,6 +73,11 @@
 #define SET26_INV_DIS           0xA6                     // Disable Inverse Display On (0xa6/a7) 
 #define TURN_ON_CMD             0xAF                     //--turn on oled panel
 
+//定义字体
+#define font_size Font_7x10		//定义字体大小为宽7高10
+// #define font_size Font_11x18			//定义字体大小为宽11高18
+// #define font_size Font_16x26			//定义字体大小为宽16高26
+
 
 //显示1，擦除0
 typedef enum {
@@ -115,8 +120,8 @@ void bsp_oled_to_set_poxel(int x,int y);
 //测试
 // 显示字符和字符串
 void bsp_oled_to_show(void);
-// 在xy到x+l,y+h
-void bsp_oled_to_text(int x,int y,int l,int h);
+// 显示一个矩形
+void bsp_oled_to_show_rectangle(int x,int y,int l,int h);
 
 
 #endif

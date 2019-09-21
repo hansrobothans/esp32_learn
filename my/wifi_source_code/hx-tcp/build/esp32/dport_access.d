@@ -1,5 +1,5 @@
 dport_access.o: /home/hans/esp/esp-idf/components/esp32/dport_access.c \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -64,7 +64,7 @@ dport_access.o: /home/hans/esp/esp-idf/components/esp32/dport_access.c \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/portmacro.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/core-macros.h
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp32/include/esp_attr.h:
 

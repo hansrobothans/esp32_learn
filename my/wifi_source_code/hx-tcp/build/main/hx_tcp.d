@@ -1,8 +1,9 @@
-hx_tcp.o: /home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
+hx_tcp.o: \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/hans/esp/esp-idf/components/xtensa/include/xtensa/hal.h \
  /home/hans/esp/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
@@ -35,7 +36,6 @@ hx_tcp.o: /home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/task.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/list.h \
- /home/hans/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/timers.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/task.h \
@@ -49,19 +49,7 @@ hx_tcp.o: /home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/hans/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h \
- /home/hans/esp/esp-idf/components/driver/include/driver/gpio.h \
- /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h \
- /home/hans/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
- /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
- /home/hans/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
- /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /home/hans/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h \
- /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
- /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
- /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h \
- /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h \
- /home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h:
 
@@ -69,7 +57,7 @@ hx_tcp.o: /home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 
@@ -135,8 +123,6 @@ hx_tcp.o: /home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/list.h:
 
-/home/hans/esp/esp-idf/components/freertos/include/freertos/queue.h:
-
 /home/hans/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
 
 /home/hans/esp/esp-idf/components/freertos/include/freertos/timers.h:
@@ -163,29 +149,5 @@ hx_tcp.o: /home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/hx_tcp.c \
 
 /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h:
-
-/home/hans/esp/esp-idf/components/driver/include/driver/gpio.h:
-
-/home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/gpio.h:
-
-/home/hans/esp/esp-idf/components/esp32/include/esp_intr_alloc.h:
-
-/home/hans/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h:
-
-/home/hans/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
-
-/home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h:
-
-/home/hans/esp/esp-idf/components/soc/esp32/include/soc/io_mux_reg.h:
-
-/home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
-
-/home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h:
-
-/home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_struct.h:
-
-/home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_reg.h:
-
-/home/hans/esp/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h:
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/main/./hx_tcp.c:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/components/bsp/include/tcp_bsp.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/main/./hx_tcp.c:

@@ -1,7 +1,7 @@
 random.o: /home/hans/esp/esp-idf/components/newlib/random.c \
  /home/hans/esp/esp-idf/components/newlib/platform_include/sys/random.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_system.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
@@ -16,7 +16,7 @@ random.o: /home/hans/esp/esp-idf/components/newlib/random.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/errno.h:
 

@@ -10,7 +10,7 @@
                      hans, 2019/09/02, 初始化版本\n 
 */
 
-# include"esp32.h"
+# include"bsp_esp32.h"
 
 void app_main()
 {
@@ -26,19 +26,39 @@ void app_main()
     // 测试流水灯的
     // int delay_ms = 1000;
     // bsp_led_rgb_pipeline_lamp_task(&delay_ms);
+    
+    // 测试队列方法控制消息
+    // 创建从队列接收消息来控制三色灯灯功能任务函数
+    // bsp_led_rgb_queue_receive_set_rgb_task(NULL);
+
+    // 创建发送消息到队列来控制三色灯灯功能任务函数（流水效果）
+    // bsp_led_rgb_queue_send_set_rgb_task(NULL);
 
     //测试oled显示屏的
     // bsp_oled_to_show();
-    // bsp_oled_to_text(5,10,15,20);
+    bsp_oled_to_show_rectangle(50,50,50,20);
+
+
+
 
     //测试sd卡
     // sd_text();
     // sd_ex();
 
-    // 测试创建wifi
+    // 测试创建wifi的ap
     //开源一小步
     // bsp_wifi_init_softap();
-    //官方例程
-    bsp_wifi_init_sta();
+    // bsp_wifi_init_char_station_softap('a');
 
-}
+    //测试创建wifi的sta
+    // bsp_wifi_init_station();
+    // bsp_wifi_init_char_station_softap('s');
+
+    //测试tcp连接
+    // bsp_tcp_init();
+
+    //接收到tcp发出的消息，将消息发给led
+    // bep_tcp_recive_send_to_led_task(NULL);
+
+
+}   

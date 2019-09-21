@@ -1,5 +1,5 @@
 brownout.o: /home/hans/esp/esp-idf/components/esp32/brownout.c \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
@@ -48,7 +48,7 @@ brownout.o: /home/hans/esp/esp-idf/components/esp32/brownout.c \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/portbenchmark.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/mpu_wrappers.h
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

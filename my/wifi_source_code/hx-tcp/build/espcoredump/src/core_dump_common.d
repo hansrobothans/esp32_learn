@@ -4,7 +4,7 @@ src/core_dump_common.o: \
  /home/hans/esp/esp-idf/components/xtensa/include/esp_debug_helpers.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_partition.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_flash.h \
  /home/hans/esp/esp-idf/components/soc/include/hal/spi_flash_types.h \
@@ -55,7 +55,7 @@ src/core_dump_common.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/spi_flash/include/esp_partition.h:
 

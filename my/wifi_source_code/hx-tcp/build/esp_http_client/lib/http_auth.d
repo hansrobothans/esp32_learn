@@ -5,7 +5,7 @@ lib/http_auth.o: \
  /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_types_private.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_interface.h \
  /home/hans/esp/esp-idf/components/esp_event/include/esp_event_base.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/ip_addr.h \
@@ -100,7 +100,7 @@ lib/http_auth.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/esp_common/include/esp_interface.h:
 

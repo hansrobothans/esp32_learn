@@ -2,7 +2,7 @@ port/portevent_m.o: \
  /home/hans/esp/esp-idf/components/freemodbus/port/portevent_m.c \
  /home/hans/esp/esp-idf/components/freemodbus/modbus/include/mb_m.h \
  /home/hans/esp/esp-idf/components/freemodbus/modbus/include/mbconfig.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freemodbus/port/port.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/hans/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
@@ -77,7 +77,7 @@ port/portevent_m.o: \
 
 /home/hans/esp/esp-idf/components/freemodbus/modbus/include/mbconfig.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freemodbus/port/port.h:
 

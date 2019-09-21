@@ -2,7 +2,7 @@ src/eap_peer/eap.o: \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/eap_peer/eap.c \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h \
  /home/hans/esp/esp-idf/components/wpa_supplicant/port/include/supplicant_opt.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
@@ -115,7 +115,7 @@ src/eap_peer/eap.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/wpa_supplicant/src/utils/includes.h:
 

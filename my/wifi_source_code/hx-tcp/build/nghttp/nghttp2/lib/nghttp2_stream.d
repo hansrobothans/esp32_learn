@@ -15,7 +15,7 @@ nghttp2/lib/nghttp2_stream.o: \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.h \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_session.h \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
  /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_helper.h \
@@ -51,7 +51,7 @@ nghttp2/lib/nghttp2_stream.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_session.h:
 

@@ -2,7 +2,7 @@ common/esp_modbus_slave.o: \
  /home/hans/esp/esp-idf/components/freemodbus/common/esp_modbus_slave.c \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/freemodbus/common/mbc_slave.h \
  /home/hans/esp/esp-idf/components/driver/include/driver/uart.h \
  /home/hans/esp/esp-idf/components/soc/include/soc/uart_periph.h \
@@ -77,7 +77,7 @@ common/esp_modbus_slave.o: \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/freemodbus/common/mbc_slave.h:
 

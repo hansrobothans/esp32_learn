@@ -3,7 +3,7 @@ asio/asio/src/asio.o: \
  /home/hans/esp/esp-idf/components/asio/asio/asio/include/asio/impl/src.hpp \
  /home/hans/esp/esp-idf/components/asio/asio/asio/include/asio/detail/config.hpp \
  /home/hans/esp/esp-idf/components/asio/port/include/esp_asio_config.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp \
  /home/hans/esp/esp-idf/components/asio/asio/asio/include/asio/error.hpp \
  /home/hans/esp/esp-idf/components/asio/asio/asio/include/asio/error_code.hpp \
@@ -302,7 +302,7 @@ asio/asio/src/asio.o: \
 
 /home/hans/esp/esp-idf/components/asio/port/include/esp_asio_config.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp:
 

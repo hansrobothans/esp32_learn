@@ -2,7 +2,7 @@ esp_spiffs.o: /home/hans/esp/esp-idf/components/spiffs/esp_spiffs.c \
  /home/hans/esp/esp-idf/components/spiffs/include/esp_spiffs.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_err.h \
  /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/spiffs/spiffs/src/spiffs.h \
  /home/hans/esp/esp-idf/components/spiffs/include/spiffs_config.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
@@ -64,7 +64,7 @@ esp_spiffs.o: /home/hans/esp/esp-idf/components/spiffs/esp_spiffs.c \
 
 /home/hans/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/spiffs/spiffs/src/spiffs.h:
 

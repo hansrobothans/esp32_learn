@@ -2,7 +2,7 @@ src/esp_image_format.o: \
  /home/hans/esp/esp-idf/components/bootloader_support/src/esp_image_format.c \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/rtc.h \
  /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h \
- /home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h \
+ /home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h \
  /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_assert.h \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
@@ -37,7 +37,7 @@ src/esp_image_format.o: \
 
 /home/hans/esp/esp-idf/components/esp_rom/include/esp32/rom/ets_sys.h:
 
-/home/hans/git/esp32/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h:
+/home/hans/git/esp32_learn/my/wifi_source_code/hx-tcp/build/bootloader/../include/sdkconfig.h:
 
 /home/hans/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
