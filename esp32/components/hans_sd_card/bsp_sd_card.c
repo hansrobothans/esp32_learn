@@ -2,8 +2,8 @@
 
 sdmmc_card_t* bsp_sd_card_init(void)
 {
-    ESP_LOGI(TAG, "Initializing SD card");
-    ESP_LOGI(TAG, "Using SPI peripheral");
+    ESP_LOGI(TAG_SD, "Initializing SD card");
+    ESP_LOGI(TAG_SD, "Using SPI peripheral");
 
 	sdmmc_host_t host = SDSPI_HOST_DEFAULT();
     sdspi_slot_config_t slot_config = SDSPI_SLOT_CONFIG_DEFAULT();
@@ -33,10 +33,10 @@ sdmmc_card_t* bsp_sd_card_init(void)
 
     if (ret != ESP_OK) {
         if (ret == ESP_FAIL) {
-            ESP_LOGE(TAG, "Failed to mount filesystem. "
+            ESP_LOGE(TAG_SD, "Failed to mount filesystem. "
                 "If you want the card to be formatted, set format_if_mount_failed = true.");
         } else {
-            ESP_LOGE(TAG, "Failed to initialize the card (%s). "
+            ESP_LOGE(TAG_SD, "Failed to initialize the card (%s). "
                 "Make sure SD card lines have pull-up resistors in place.", esp_err_to_name(ret));
         }
         return NULL;
@@ -57,10 +57,10 @@ void bsp_sd_card_open_to_read(char *path)
     }
     printf("2\n");
     // Open file for reading
-    ESP_LOGI(TAG, "Reading file");
+    ESP_LOGI(TAG_SD, "Reading file");
     FILE* f = fopen(path, "r");
     if (f == NULL) {
-        ESP_LOGE(TAG, "Failed to open file for reading");
+        ESP_LOGE(TAG_SD, "Failed to open file for reading");
         return;
     }
     char line[180];
@@ -71,7 +71,7 @@ void bsp_sd_card_open_to_read(char *path)
         if (pos) {
             *pos = '\0';
         }
-        ESP_LOGI(TAG, "Read from file: '%s'", line);
+        ESP_LOGI(TAG_SD, "Read from file: '%s'", line);
     }
     fclose(f);
 }
@@ -90,5 +90,5 @@ void sd_text(void)
 
     // All done, unmount partition and disable SDMMC or SPI peripheral
     esp_vfs_fat_sdmmc_unmount();
-    ESP_LOGI(TAG, "Card unmounted");
+    ESP_LOGI(TAG_SD, "Card unmounted");
 }

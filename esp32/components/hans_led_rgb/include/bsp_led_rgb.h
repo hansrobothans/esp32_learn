@@ -16,9 +16,9 @@
 #include "sdkconfig.h"
 
 //引脚号
-#define LED_R_IO 		25
-#define LED_G_IO 		26
-#define LED_B_IO 		27
+#define LED_R_IO 		23
+#define LED_G_IO 		21
+#define LED_B_IO 		22
 
 // 灯开
 #define on 1

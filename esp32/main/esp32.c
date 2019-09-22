@@ -35,15 +35,18 @@ void app_main()
     // bsp_led_rgb_queue_send_set_rgb_task(NULL);
 
     //测试oled显示屏的
-    // bsp_oled_to_show();
-    bsp_oled_to_show_rectangle(50,50,50,20);
+    // bsp_oled_to_text();
+    // bsp_oled_to_show_rectangle(50,50,50,20);
+    // bsp_oled_welcome();
+    bsp_oled_init();
+    bsp_tcp_recive_send_to_oled_task(NULL);
+    bsp_oled_recive_send_to_oled_task(NULL);
 
 
 
 
     //测试sd卡
     // sd_text();
-    // sd_ex();
 
     // 测试创建wifi的ap
     //开源一小步

@@ -78,6 +78,7 @@
 // #define font_size Font_11x18			//定义字体大小为宽11高18
 // #define font_size Font_16x26			//定义字体大小为宽16高26
 
+extern QueueHandle_t bsp_oled_xQueue;
 
 //显示1，擦除0
 typedef enum {
@@ -91,6 +92,13 @@ typedef struct {
 	uint8_t Inverted;
 	uint8_t Initialized;
 } SSD1306_t;
+
+// 接收oled队列发出的消息数据类型定义
+typedef struct
+{
+	int id;
+	char data[1024];
+}bsp_oled_message;
 
 
 //oled初始化
@@ -119,9 +127,18 @@ char bsp_oled_show_str(uint16_t x, uint16_t y,char* str, FontDef_t* Font, SSD130
 void bsp_oled_to_set_poxel(int x,int y);
 //测试
 // 显示字符和字符串
-void bsp_oled_to_show(void);
+void bsp_oled_to_text(void);
 // 显示一个矩形
 void bsp_oled_to_show_rectangle(int x,int y,int l,int h);
+//启动oled并显示默认提示语
+void bsp_oled_welcome(void);
+// 接收oled队列发出的消息
+void bsp_tcp_recive_send_to_oled(void * pvParameters);
+// 创建接收oled队列发出的消息功能任务函数
+void bsp_tcp_recive_send_to_oled_task(void * pvParameters);
+
+void bsp_oled_recive_send_to_oled_task(void * pvParameters);
+void bsp_oled_recive_send_to_oled(void * pvParameters);
 
 
 #endif

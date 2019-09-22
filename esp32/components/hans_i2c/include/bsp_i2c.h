@@ -14,9 +14,18 @@
 =========================== 
 */
 
-//I2C
-#define I2C_SCL_IO       	33									//SCL->IO33
-#define I2C_SDA_IO         	32              					//SDA->IO32
+// //I2C
+#define I2C_SCL_IO       	32									//SCL->IO33
+#define I2C_SDA_IO         	33              					//SDA->IO32
+
+// #define I2C_SCL_IO       	25									//SCL->IO33
+// #define I2C_SDA_IO         	26              					//SDA->IO32
+
+// #define I2C_SDA_IO         	12              					//SDA->IO32
+// #define I2C_SCL_IO       	14									//SCL->IO33
+
+
+
 #define I2C_MASTER_NUM      I2C_NUM_1        					//I2C_1
 #define WRITE_BIT           I2C_MASTER_WRITE 					/*!< I2C master write */
 #define READ_BIT            I2C_MASTER_READ  					/*!< I2C master read */

@@ -12,6 +12,8 @@ static uint8_t g_oled_buffer[SSD1306_WIDTH * SSD1306_HEIGHT / 8];
 static SSD1306_t oled;
 //OLED是否正在显示，1显示，0等待
 static bool is_show_str =0;
+//oled显示文字队列
+QueueHandle_t bsp_oled_xQueue;
 /*
 ===========================
 函数定义
@@ -409,16 +411,10 @@ void bsp_oled_to_show_rectangle(int x,int y,int l,int h)
   bsp_oled_update_screen(); 
 }
 
-void bsp_oled_to_show(void)
+void bsp_oled_welcome(void)
 {
   bsp_oled_init();
-  bsp_oled_show_str(0,0,  "123456789012345678", &font_size, 1);
-  bsp_oled_show_str(0,10, "123456789012345678", &font_size, 1);
-  bsp_oled_show_str(0,20, "123456789012345678", &font_size, 1);
-  bsp_oled_show_str(0,30, "123456789012345678", &font_size, 1);
-  bsp_oled_show_str(0,40, "123456789012345678", &font_size, 1);
-  bsp_oled_show_str(0,50, "123456789012345678", &font_size, 1);
-  // bsp_oled_show_char(0,15,'a',&font_size, 1);
+  bsp_oled_show_str(10,25,  "Welcome to OLED", &font_size, 1);
   vTaskDelay(10000 / portTICK_PERIOD_MS);
 }
 
@@ -430,29 +426,130 @@ void bsp_oled_to_show(void)
 *               Ver0.0.1:
                     hans, 2019/09/04, 初始化版本\n 
 */
-// void bep_tcp_recive_send_to_led(void * pvParameters)
-// {
+void bsp_tcp_recive_send_to_oled(void * pvParameters)
+{
+  // // 将传入参数转化为正确类型，并接收
+  // int delay_ms = *((int *)pvParameters);
+  // int i = 0;
+  // 字符串长度
+  int str_len = 0;
+  // 接受数据的结果
+  BaseType_t xResult = 0;
+  // 接收的字符
+  bsp_oled_message oled_message_get;
 
-//   // printf("\n\n\n\n\n\n\n\na\n\n\n\n\n\n\n\n");
-//   // 接受数据的结果
-//   BaseType_t xResult = 0;
-//   // tcp接收到的队列消息变量
-//   bsp_tcp_recive_message bsp_tcp_recive_message_v;
-//   // 发给led_rgb队列消息变量
-//   bsp_led_message led_message_send = {0,' '};
-//   while(1)
-//   {
-//     // 接受数据
-//     xResult = xQueueReceive(bsp_tcp_recive_xQueue,(void *)(&bsp_tcp_recive_message_v),( TickType_t ) 10 ) ;
-//     led_message_send.data = bsp_tcp_recive_message_v.data[0];
-//     // led_message_send.data = 'g';
-//     // 判断是否接受数据成功
-//     if(xResult == pdPASS)
-//     {
-//       printf("接收到消息队列数据led_chr_get1 = %c\r\n", bsp_tcp_recive_message_v.data[0]);
-//       // 将接收到的数据发送出去
-//       xQueueSend(bsp_led_rgb_xQueue,(void *) &led_message_send,0);
-//     }
-//     vTaskDelay(1000 / portTICK_PERIOD_MS);
-//   } 
-// }
+  // // 队列句柄()在文件头定义
+  // QueueHandle_t bsp_led_rgb_xQueue;
+  // /* 创建队列，其大小可包含10个元素Data */
+  bsp_oled_xQueue = xQueueCreate(10, sizeof(bsp_oled_message));
+
+  // 判断是否创建成功
+  if(bsp_oled_xQueue != 0)
+  {
+    while(1)
+    {
+      // printf("tcp_oled4");
+      //清空缓存
+      memset(oled_message_get.data, 0x00, sizeof(oled_message_get.data));
+      // 接受数据
+      xResult = xQueueReceive(bsp_oled_xQueue,(void *)&oled_message_get,( TickType_t ) 10);
+
+      // 判断是否接受数据成功
+      if(xResult == pdPASS)
+      {
+        // printf("tcp_oled5");
+        str_len = strlen(oled_message_get.data);
+        // printf("接收到消息队列数据oled_message_get.data = %s\r\n", oled_message_get.data);
+        // 将接收到的数据发送出去
+        if (str_len != 0)
+        {
+          bsp_oled_clear();
+          bsp_oled_show_str(0,0,oled_message_get.data, &font_size, 1);
+          str_len = 0;
+        }
+        
+      }
+      vTaskDelay(100 / portTICK_PERIOD_MS);
+    } 
+  } 
+}
+
+
+/*
+* 创建接收oled队列发出的消息功能任务函数
+* @param[in]      void * pvParameters              :任务实现函数模板参数
+* @retval         void                             :无
+* @note        修改日志 
+*               Ver0.0.1:
+                    hans, 2019/09/04, 初始化版本\n 
+*/
+void bsp_tcp_recive_send_to_oled_task(void * pvParameters)
+{
+  // 创建接收oled队列发出的消息功能任务
+  xTaskCreate(
+      &bsp_tcp_recive_send_to_oled,/* 任务函数 */
+      "bsp_tcp_recive_send_to_oled",/* 任务名称 */
+      3000,/* 任务的堆栈大小 */
+      NULL,/* 任务的参数 */
+      5,/* 任务的优先级 */
+      NULL);/* 跟踪创建的任务的任务句柄 */
+}
+
+/*
+* oled队列发出的消息函数
+* @param[in]      void * pvParameters              :任务实现函数模板参数
+* @retval         void                             :无
+* @note        修改日志 
+*               Ver0.0.1:
+                    hans, 2019/09/04, 初始化版本\n 
+*/
+void bsp_oled_recive_send_to_oled(void * pvParameters)
+{
+  // 接收的字符
+  bsp_oled_message oled_message_get;
+  // 设置为流水灯效果
+  while(1)
+  {
+    //清空缓存
+    memset(oled_message_get.data, 0x00, sizeof(oled_message_get.data));
+
+    oled_message_get.data[0] = 'a';
+
+    xQueueSend(bsp_oled_xQueue,(void *) &oled_message_get,( TickType_t ) 10);
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+  }
+}
+/*
+* 创建oled队列发出的消息功能任务函数
+* @param[in]      void * pvParameters              :任务实现函数模板参数
+* @retval         void                             :无
+* @note        修改日志 
+*               Ver0.0.1:
+                    hans, 2019/09/04, 初始化版本\n 
+*/
+void bsp_oled_recive_send_to_oled_task(void * pvParameters)
+{
+  // 创建接收oled队列发出的消息功能任务
+  xTaskCreate(
+      &bsp_oled_recive_send_to_oled,/* 任务函数 */
+      "bsp_oled_recive_send_to_oled",/* 任务名称 */
+      3000,/* 任务的堆栈大小 */
+      NULL,/* 任务的参数 */
+      5,/* 任务的优先级 */
+      NULL);/* 跟踪创建的任务的任务句柄 */
+}
+
+
+void bsp_oled_to_text(void)
+{
+  bsp_oled_init();
+  bsp_oled_show_str(0,0,  "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,10, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,20, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,30, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,40, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,50, "123456789012345678", &font_size, 1);
+  // bsp_oled_show_char(0,15,'a',&font_size, 1);
+  // vTaskDelay(10000 / portTICK_PERIOD_MS);
+}
+
