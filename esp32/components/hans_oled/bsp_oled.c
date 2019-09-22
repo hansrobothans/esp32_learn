@@ -14,6 +14,8 @@ static SSD1306_t oled;
 static bool is_show_str =0;
 //oled显示文字队列
 QueueHandle_t bsp_oled_xQueue;
+
+
 /*
 ===========================
 函数定义
@@ -418,6 +420,53 @@ void bsp_oled_welcome(void)
   vTaskDelay(10000 / portTICK_PERIOD_MS);
 }
 
+
+void bsp_oled_queue_str(char *oled_message_get_data)
+{
+  // 传入队列的数据下标
+  int i = 0;
+  // 存储数组的行
+  int str_6_h = 0;
+  // 存储数组的列
+  int str_6_l = 0;
+
+  // 中间变量
+  char chr = 0;
+  // 用来存储显示的字符数组
+  char str_6[6][19] = {0};
+  chr = oled_message_get_data[i];
+  while(chr != 0)
+  {
+    // 高度越界
+    if(str_6_h>6)
+      break;
+    str_6[str_6_h][str_6_l] = chr;
+    str_6_l++;
+    i++;
+    // 长度越界
+    if(str_6_l>17)
+    {
+      str_6[str_6_h][18] = 0;
+      str_6_l = 0;
+      str_6_h++;
+    }
+    chr = oled_message_get_data[i];
+  }
+  // 字符串补零
+  str_6[str_6_h][str_6_l+1] = 0;
+  // 开始显示
+  bsp_oled_show_str(0,0,  str_6[0], &font_size, 1);
+  bsp_oled_show_str(0,10, str_6[1], &font_size, 1);
+  bsp_oled_show_str(0,20, str_6[2], &font_size, 1);
+  bsp_oled_show_str(0,30, str_6[3], &font_size, 1);
+  bsp_oled_show_str(0,40, str_6[4], &font_size, 1);
+  bsp_oled_show_str(0,50, str_6[5], &font_size, 1);
+  // vTaskDelay(10000 / portTICK_PERIOD_MS);
+}
+
+
+
+
 /*
 * 接收oled队列发出的消息，x
 * @param[in]      void * pvParameters              :任务实现函数模板参数
@@ -430,7 +479,7 @@ void bsp_tcp_recive_send_to_oled(void * pvParameters)
 {
   // // 将传入参数转化为正确类型，并接收
   // int delay_ms = *((int *)pvParameters);
-  // int i = 0;
+  int i = 0;
   // 字符串长度
   int str_len = 0;
   // 接受数据的结果
@@ -464,12 +513,16 @@ void bsp_tcp_recive_send_to_oled(void * pvParameters)
         if (str_len != 0)
         {
           bsp_oled_clear();
-          bsp_oled_show_str(0,0,oled_message_get.data, &font_size, 1);
+          // bsp_oled_show_str(0,i,oled_message_get.data, &font_size, 1);
+          bsp_oled_queue_str(oled_message_get.data);
+          i++;
           str_len = 0;
+          if (i>63)
+            i=0;
         }
         
       }
-      vTaskDelay(100 / portTICK_PERIOD_MS);
+      // vTaskDelay(100 / portTICK_PERIOD_MS);
     } 
   } 
 }
@@ -506,14 +559,18 @@ void bsp_tcp_recive_send_to_oled_task(void * pvParameters)
 void bsp_oled_recive_send_to_oled(void * pvParameters)
 {
   // 接收的字符
-  bsp_oled_message oled_message_get;
+  bsp_oled_message oled_message_get={0,"12345678901234567890123456789012345678901234567890"};
   // 设置为流水灯效果
   while(1)
   {
     //清空缓存
-    memset(oled_message_get.data, 0x00, sizeof(oled_message_get.data));
-
-    oled_message_get.data[0] = 'a';
+    // memset(oled_message_get.data, 0x00, sizeof(oled_message_get.data));
+    // for (int i = 1; i < 3; ++i)
+    // {
+    //   for(int j = 1; j < 10; ++j)
+    //     oled_message_get.data[(i-1)*18+j-1] = '0' + j;
+    // }
+    
 
     xQueueSend(bsp_oled_xQueue,(void *) &oled_message_get,( TickType_t ) 10);
     vTaskDelay(100 / portTICK_PERIOD_MS);

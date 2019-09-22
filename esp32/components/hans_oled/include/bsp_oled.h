@@ -134,11 +134,13 @@ void bsp_oled_to_show_rectangle(int x,int y,int l,int h);
 void bsp_oled_welcome(void);
 // 接收oled队列发出的消息
 void bsp_tcp_recive_send_to_oled(void * pvParameters);
+// oled队列发出的消息函数
+void bsp_oled_recive_send_to_oled(void * pvParameters);
 // 创建接收oled队列发出的消息功能任务函数
 void bsp_tcp_recive_send_to_oled_task(void * pvParameters);
-
+// 创建oled队列发出的消息功能任务函数
 void bsp_oled_recive_send_to_oled_task(void * pvParameters);
-void bsp_oled_recive_send_to_oled(void * pvParameters);
-
+// 根据接收到的字符串按照18*5显示在oled上
+void bsp_oled_queue_str(char *oled_message_get_data);
 
 #endif
