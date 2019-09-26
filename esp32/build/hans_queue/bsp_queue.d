@@ -129,6 +129,8 @@ bsp_queue.o: \
  /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h \
  /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
  /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
+ /home/hans/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wpa2.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h \
  /home/hans/git/esp32_learn/esp32/components/hans_tcp/include/bsp_tcp.h \
@@ -144,7 +146,8 @@ bsp_queue.o: \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/memp_priv.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
- /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h
+ /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_udp/include/bsp_udp.h
 
 /home/hans/git/esp32_learn/esp32/components/hans_queue/include/bsp_queue.h:
 
@@ -404,6 +407,10 @@ bsp_queue.o: \
 
 /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
 
+/home/hans/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wpa2.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
+
 /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
 
 /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h:
@@ -435,4 +442,6 @@ bsp_queue.o: \
 /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
 
 /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
+
+/home/hans/git/esp32_learn/esp32/components/hans_udp/include/bsp_udp.h:
 /home/hans/git/esp32_learn/esp32/components/hans_queue/./bsp_queue.c:

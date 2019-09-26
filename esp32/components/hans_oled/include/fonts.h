@@ -52,6 +52,7 @@ extern FontDef_t Font_11x18;
 extern FontDef_t Font_16x26;
 
 
+
 /**
  * @brief  Calculates string length and height in units of pixels depending on string and font used
  * @param  *str: String to be checked for length and height

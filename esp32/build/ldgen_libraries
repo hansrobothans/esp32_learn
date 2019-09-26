@@ -35,6 +35,7 @@
  /home/hans/git/esp32_learn/esp32/build/hans_queue/libhans_queue.a
  /home/hans/git/esp32_learn/esp32/build/hans_sd_card/libhans_sd_card.a
  /home/hans/git/esp32_learn/esp32/build/hans_tcp/libhans_tcp.a
+ /home/hans/git/esp32_learn/esp32/build/hans_udp/libhans_udp.a
  /home/hans/git/esp32_learn/esp32/build/hans_wifi/libhans_wifi.a
  /home/hans/git/esp32_learn/esp32/build/heap/libheap.a
  /home/hans/git/esp32_learn/esp32/build/idf_test/libidf_test.a

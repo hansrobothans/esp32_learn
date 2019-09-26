@@ -13,22 +13,28 @@
  =============*/
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
 #include "esp_event_loop.h"
 #include "esp_event.h"
 #include "esp_system.h"
-#include "esp_spi_flash.h"
-#include "esp_wifi.h"
 #include "esp_log.h"
 #include "esp_err.h"
 #include "nvs_flash.h"
+#include "esp_spi_flash.h"
+#include "esp_wifi.h"
+#include "esp_wpa2.h"
+#include "tcpip_adapter.h"
+#include "esp_smartconfig.h"
 
 
 
 #include "lwip/err.h"
 #include "lwip/sys.h"
+
+#define SMARTCONFIG true	//是否开启smart配网
 
 
 //修改此处可以修改热点ap的帐号密码以及最大连接数（不可以超过4）无需多修改其它参数
@@ -44,6 +50,7 @@
 #define TAG_WIFI 					"wifi"
 // FreeRTOS event group to signal when we are connected to wifi
 #define WIFI_CONNECTED_BIT BIT0					//wifi建立成功信号量
+#define ESPTOUCH_DONE_BIT BIT1					//smart配网成功
 extern EventGroupHandle_t bsp_wifi_event_group;		//wifi建立成功信号量句柄
 
 // 创建热点

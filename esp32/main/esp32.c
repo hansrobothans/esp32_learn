@@ -38,8 +38,8 @@ void app_main()
     // bsp_oled_to_text();
     // bsp_oled_to_show_rectangle(50,50,50,20);
     // bsp_oled_welcome();
-    bsp_oled_init();
-    bsp_tcp_recive_send_to_oled_task(NULL);
+    // bsp_oled_init();
+    // bsp_tcp_recive_send_to_oled_task(NULL);
     // bsp_oled_recive_send_to_oled_task(NULL);
     // bsp_oled_queue_str(NULL);
 
@@ -59,13 +59,13 @@ void app_main()
     // bsp_wifi_init_char_station_softap('s');
 
     //测试tcp连接
-    bsp_tcp_init();
+    // bsp_tcp_init();
 
     //接收到tcp发出的消息，将消息发给led
     // bsp_queue_tcp_recive_send_to_led_task(NULL);
 
     // 创建接收到tcp发出的消息，将消息发给oled功能任务函数
-    bsp_queue_tcp_recive_send_to_oled_task(NULL);
+    // bsp_queue_tcp_recive_send_to_oled_task(NULL);
 
-
+    // udp_text();
 }   

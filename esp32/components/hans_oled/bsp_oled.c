@@ -15,7 +15,6 @@ static bool is_show_str =0;
 //oled显示文字队列
 QueueHandle_t bsp_oled_xQueue;
 
-
 /*
 ===========================
 函数定义

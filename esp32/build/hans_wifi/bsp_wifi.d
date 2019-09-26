@@ -73,12 +73,6 @@ bsp_wifi.o: \
  /home/hans/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  /home/hans/esp/esp-idf/components/esp_event/include/esp_event.h \
  /home/hans/esp/esp-idf/components/esp_event/include/esp_event_base.h \
- /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
- /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
- /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h \
- /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
- /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log.h \
  /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/hans/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
@@ -89,6 +83,14 @@ bsp_wifi.o: \
  /home/hans/esp/esp-idf/components/esp_common/include/esp_types.h \
  /home/hans/esp/esp-idf/components/soc/include/hal/esp_flash_err.h \
  /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
+ /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h \
+ /home/hans/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wpa2.h \
+ /home/hans/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h
 
@@ -238,18 +240,6 @@ bsp_wifi.o: \
 
 /home/hans/esp/esp-idf/components/esp_event/include/esp_event_base.h:
 
-/home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
-
-/home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
-
-/home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
-
-/home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h:
-
-/home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
-
-/home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
-
 /home/hans/esp/esp-idf/components/log/include/esp_log.h:
 
 /home/hans/esp/esp-idf/components/log/include/esp_log_internal.h:
@@ -269,6 +259,22 @@ bsp_wifi.o: \
 /home/hans/esp/esp-idf/components/soc/include/hal/esp_flash_err.h:
 
 /home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
+
+/home/hans/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_types.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/esp_wifi_private.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_wifi_crypto_types.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_private/wifi_os_adapter.h:
+
+/home/hans/esp/esp-idf/components/wpa_supplicant/include/esp_supplicant/esp_wpa2.h:
+
+/home/hans/esp/esp-idf/components/esp_wifi/include/esp_smartconfig.h:
 
 /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
 
