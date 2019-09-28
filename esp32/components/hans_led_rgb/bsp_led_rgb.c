@@ -43,27 +43,27 @@ void bsp_led_rgb_set_rgb(void * pvParameters)
   {
     case 'r':
       //只点亮红灯
-      gpio_set_level(LED_R_IO, on);
-      gpio_set_level(LED_G_IO, off);
-      gpio_set_level(LED_B_IO, off);
+      gpio_set_level(LED_R_IO, LED_RGB_ON);
+      gpio_set_level(LED_G_IO, LED_RGB_OFF);
+      gpio_set_level(LED_B_IO, LED_RGB_OFF);
       break;
     case 'g':
       //只点亮绿灯        
-      gpio_set_level(LED_R_IO, off);
-      gpio_set_level(LED_G_IO, on);
-      gpio_set_level(LED_B_IO, off);
+      gpio_set_level(LED_R_IO, LED_RGB_OFF);
+      gpio_set_level(LED_G_IO, LED_RGB_ON);
+      gpio_set_level(LED_B_IO, LED_RGB_OFF);
       break;
     case 'b':
       //只点亮蓝灯
-      gpio_set_level(LED_R_IO, off);
-      gpio_set_level(LED_G_IO, off);
-      gpio_set_level(LED_B_IO, on);
+      gpio_set_level(LED_R_IO, LED_RGB_OFF);
+      gpio_set_level(LED_G_IO, LED_RGB_OFF);
+      gpio_set_level(LED_B_IO, LED_RGB_ON);
       break;
     default:
       //全灭
-      gpio_set_level(LED_R_IO, off);
-      gpio_set_level(LED_G_IO, off);
-      gpio_set_level(LED_B_IO, off);
+      gpio_set_level(LED_R_IO, LED_RGB_OFF);
+      gpio_set_level(LED_G_IO, LED_RGB_OFF);
+      gpio_set_level(LED_B_IO, LED_RGB_OFF);
   }
 }
 
@@ -93,27 +93,27 @@ void bsp_led_rgb_pipeline_lamp(void * pvParameters)
     //只点亮红灯
     bsp_led_rgb_set_rgb(&led_r);
 
-    // gpio_set_level(LED_R_IO, on);
-    // gpio_set_level(LED_G_IO, off);
-    // gpio_set_level(LED_B_IO, off);
+    // gpio_set_level(LED_R_IO, LED_RGB_ON);
+    // gpio_set_level(LED_G_IO, LED_RGB_OFF);
+    // gpio_set_level(LED_B_IO, LED_RGB_OFF);
 
     vTaskDelay(delay_ms / portTICK_PERIOD_MS);
 
     //只点亮绿灯
     bsp_led_rgb_set_rgb(&led_g);
 
-    // gpio_set_level(LED_R_IO, off);
-    // gpio_set_level(LED_G_IO, on);
-    // gpio_set_level(LED_B_IO, off);
+    // gpio_set_level(LED_R_IO, LED_RGB_OFF);
+    // gpio_set_level(LED_G_IO, LED_RGB_ON);
+    // gpio_set_level(LED_B_IO, LED_RGB_OFF);
 
     vTaskDelay(delay_ms / portTICK_PERIOD_MS);
 
     //只点亮蓝灯
     bsp_led_rgb_set_rgb(&led_b);
 
-    // gpio_set_level(LED_R_IO, off);
-    // gpio_set_level(LED_G_IO, off);
-    // gpio_set_level(LED_B_IO, on);
+    // gpio_set_level(LED_R_IO, LED_RGB_OFF);
+    // gpio_set_level(LED_G_IO, LED_RGB_OFF);
+    // gpio_set_level(LED_B_IO, LED_RGB_ON);
 
     vTaskDelay(delay_ms / portTICK_PERIOD_MS);
     }

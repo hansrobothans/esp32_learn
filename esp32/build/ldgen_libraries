@@ -29,11 +29,13 @@
  /home/hans/git/esp32_learn/esp32/build/freemodbus/libfreemodbus.a
  /home/hans/git/esp32_learn/esp32/build/freertos/libfreertos.a
  /home/hans/git/esp32_learn/esp32/build/hans_esp32/libhans_esp32.a
+ /home/hans/git/esp32_learn/esp32/build/hans_http/libhans_http.a
  /home/hans/git/esp32_learn/esp32/build/hans_i2c/libhans_i2c.a
  /home/hans/git/esp32_learn/esp32/build/hans_led_rgb/libhans_led_rgb.a
  /home/hans/git/esp32_learn/esp32/build/hans_oled/libhans_oled.a
  /home/hans/git/esp32_learn/esp32/build/hans_queue/libhans_queue.a
  /home/hans/git/esp32_learn/esp32/build/hans_sd_card/libhans_sd_card.a
+ /home/hans/git/esp32_learn/esp32/build/hans_st7735/libhans_st7735.a
  /home/hans/git/esp32_learn/esp32/build/hans_tcp/libhans_tcp.a
  /home/hans/git/esp32_learn/esp32/build/hans_udp/libhans_udp.a
  /home/hans/git/esp32_learn/esp32/build/hans_wifi/libhans_wifi.a
@@ -53,6 +55,7 @@
  /home/hans/git/esp32_learn/esp32/build/nvs_flash/libnvs_flash.a
  /home/hans/git/esp32_learn/esp32/build/openssl/libopenssl.a
  /home/hans/git/esp32_learn/esp32/build/protobuf-c/libprotobuf-c.a
+ /home/hans/git/esp32_learn/esp32/build/protocol_examples_common/libprotocol_examples_common.a
  /home/hans/git/esp32_learn/esp32/build/protocomm/libprotocomm.a
  /home/hans/git/esp32_learn/esp32/build/pthread/libpthread.a
  /home/hans/git/esp32_learn/esp32/build/sdmmc/libsdmmc.a

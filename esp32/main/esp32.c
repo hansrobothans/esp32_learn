@@ -23,6 +23,8 @@ void app_main()
         ret = nvs_flash_init();
     }
     ESP_ERROR_CHECK(ret);
+
+
     // 测试流水灯的
     // int delay_ms = 1000;
     // bsp_led_rgb_pipeline_lamp_task(&delay_ms);
@@ -33,6 +35,7 @@ void app_main()
 
     // 创建发送消息到队列来控制三色灯灯功能任务函数（流水效果）
     // bsp_led_rgb_queue_send_set_rgb_task(NULL);
+
 
     //测试oled显示屏的
     // bsp_oled_to_text();
@@ -47,7 +50,8 @@ void app_main()
 
 
     //测试sd卡
-    // sd_text();
+    sd_text();
+
 
     // 测试创建wifi的ap
     //开源一小步
@@ -58,6 +62,7 @@ void app_main()
     // bsp_wifi_init_station();
     // bsp_wifi_init_char_station_softap('s');
 
+
     //测试tcp连接
     // bsp_tcp_init();
 
@@ -67,5 +72,21 @@ void app_main()
     // 创建接收到tcp发出的消息，将消息发给oled功能任务函数
     // bsp_queue_tcp_recive_send_to_oled_task(NULL);
 
+
+    // 测试udp连接发送消息
     // udp_text();
+
+
+    // 测试http服务器
+    // start_webserver();
+
+    // st7735测试
+    // st7735_show_fullevery();
+
+    // st7735_init();
+    // st7735_rect(20, 30, 50, 50, COLOR_RED);
+
+    // vTaskDelay(1000 / portTICK_PERIOD_MS);
+    // st7735_draw_string(0, 0, "I LOVE benben", COLOR_RED, COLOR_YELLOW,1);
+
 }   

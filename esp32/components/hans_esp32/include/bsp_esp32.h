@@ -24,6 +24,7 @@
 #include "bsp_wifi.h"
 #include "bsp_tcp.h"
 #include "bsp_udp.h"
-
+#include "bsp_http.h"
+#include "bsp_st7735.h"
 
 #endif//ESP32_H

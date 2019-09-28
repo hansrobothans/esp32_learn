@@ -143,5 +143,7 @@ void bsp_oled_recive_send_to_oled_task(void * pvParameters);
 // 根据接收到的字符串按照18*5显示在oled上
 void bsp_oled_queue_str(char *oled_message_get_data);
 
+void bsp_oled_image_update_screen(uint8_t *image);
+
 
 #endif

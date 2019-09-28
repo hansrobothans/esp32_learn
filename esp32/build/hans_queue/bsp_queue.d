@@ -147,7 +147,16 @@ bsp_queue.o: \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/priv/mem_priv.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
- /home/hans/git/esp32_learn/esp32/components/hans_udp/include/bsp_udp.h
+ /home/hans/git/esp32_learn/esp32/components/hans_udp/include/bsp_udp.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_http/include/bsp_http.h \
+ /home/hans/esp/esp-idf/components/esp_eth/include/esp_eth.h \
+ /home/hans/esp/esp-idf/components/esp_eth/include/esp_eth_com.h \
+ /home/hans/esp/esp-idf/components/esp_eth/include/esp_eth_mac.h \
+ /home/hans/esp/esp-idf/components/esp_eth/include/esp_eth_phy.h \
+ /home/hans/esp/esp-idf/components/esp_http_server/include/esp_http_server.h \
+ /home/hans/esp/esp-idf/components/nghttp/port/include/http_parser.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_st7735/include/bsp_st7735.h \
+ /home/hans/git/esp32_learn/esp32/components/hans_st7735/include/ascii_font.h
 
 /home/hans/git/esp32_learn/esp32/components/hans_queue/include/bsp_queue.h:
 
@@ -444,4 +453,22 @@ bsp_queue.o: \
 /home/hans/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
 
 /home/hans/git/esp32_learn/esp32/components/hans_udp/include/bsp_udp.h:
+
+/home/hans/git/esp32_learn/esp32/components/hans_http/include/bsp_http.h:
+
+/home/hans/esp/esp-idf/components/esp_eth/include/esp_eth.h:
+
+/home/hans/esp/esp-idf/components/esp_eth/include/esp_eth_com.h:
+
+/home/hans/esp/esp-idf/components/esp_eth/include/esp_eth_mac.h:
+
+/home/hans/esp/esp-idf/components/esp_eth/include/esp_eth_phy.h:
+
+/home/hans/esp/esp-idf/components/esp_http_server/include/esp_http_server.h:
+
+/home/hans/esp/esp-idf/components/nghttp/port/include/http_parser.h:
+
+/home/hans/git/esp32_learn/esp32/components/hans_st7735/include/bsp_st7735.h:
+
+/home/hans/git/esp32_learn/esp32/components/hans_st7735/include/ascii_font.h:
 /home/hans/git/esp32_learn/esp32/components/hans_queue/./bsp_queue.c:

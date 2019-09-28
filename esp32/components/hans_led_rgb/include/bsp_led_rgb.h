@@ -21,9 +21,9 @@
 #define LED_B_IO 		22
 
 // 灯开
-#define on 1
+#define LED_RGB_ON 1
 // 灯灭
-#define off 0
+#define LED_RGB_OFF 0
 
 extern QueueHandle_t bsp_led_rgb_xQueue;
 
