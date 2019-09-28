@@ -51,7 +51,7 @@ extern FontDef_t Font_11x18;
  */
 extern FontDef_t Font_16x26;
 
-extern uint8_t gImage_xhr[1024];
+// extern uint8_t gImage_xhr[1024];
 
 
 

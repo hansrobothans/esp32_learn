@@ -599,14 +599,14 @@ void bsp_oled_recive_send_to_oled_task(void * pvParameters)
 void bsp_oled_to_text(void)
 {
   bsp_oled_init();
-  // bsp_oled_show_str(0,0,  "123456789012345678", &font_size, 1);
-  // bsp_oled_show_str(0,10, "123456789012345678", &font_size, 1);
-  // bsp_oled_show_str(0,20, "123456789012345678", &font_size, 1);
-  // bsp_oled_show_str(0,30, "123456789012345678", &font_size, 1);
-  // bsp_oled_show_str(0,40, "123456789012345678", &font_size, 1);
-  // bsp_oled_show_str(0,50, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,0,  "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,10, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,20, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,30, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,40, "123456789012345678", &font_size, 1);
+  bsp_oled_show_str(0,50, "123456789012345678", &font_size, 1);
 
-  bsp_oled_image_update_screen(gImage_xhr);
+  // bsp_oled_image_update_screen(gImage_xhr);
 
   // vTaskDelay(10000 / portTICK_PERIOD_MS);
 }
@@ -620,16 +620,16 @@ void bsp_oled_to_text(void)
  *               Ver0.0.1:
                      XinC_Guo, 2018/07/18, 初始化版本\n 
  */
-void bsp_oled_image_update_screen(uint8_t *image)
-{
-    uint8_t line_index;
-    for(line_index=0; line_index<8 ;line_index++)
-    {
-        bsp_oled_write_cmd(0xb0+line_index);
-        bsp_oled_write_cmd(0x00);
-        bsp_oled_write_cmd(0x10);
+// void bsp_oled_image_update_screen(uint8_t *image)
+// {
+//     uint8_t line_index;
+//     for(line_index=0; line_index<8 ;line_index++)
+//     {
+//         bsp_oled_write_cmd(0xb0+line_index);
+//         bsp_oled_write_cmd(0x00);
+//         bsp_oled_write_cmd(0x10);
         
-        bsp_oled_write_long_data(&image[SSD1306_WIDTH * line_index],SSD1306_WIDTH);
-    }
-}
+//         bsp_oled_write_long_data(&image[SSD1306_WIDTH * line_index],SSD1306_WIDTH);
+//     }
+// }
 
