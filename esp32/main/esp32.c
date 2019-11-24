@@ -98,6 +98,8 @@ void app_main()
 
 
     // // mfrc522测试
-    bsp_mfrc522_init();
+    // bsp_mfrc522_init();
+
+
 
 }   
