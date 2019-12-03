@@ -48,7 +48,6 @@ esp_err_t rc522_resume();
 esp_err_t rc522_pause();
 
 void bsp_rc522_text(void * pvParameters);
-void tag_handler(uint8_t* serial_no); 
-void bsp_rc522_text_task();
+void tag_handler(uint8_t* serial_no);
 
 #endif

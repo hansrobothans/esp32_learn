@@ -337,7 +337,7 @@ esp_err_t rc522_pause() {
 }
 
 
-
+//回调函数
 void tag_handler(uint8_t* serial_no) {
     for(int i = 0; i < 5; i++) {
         printf("%#x ", serial_no[i]);
@@ -346,25 +346,15 @@ void tag_handler(uint8_t* serial_no) {
     printf("\n");
 }
 
+
 void bsp_rc522_text(void * pvParameters) {
     const rc522_start_args_t start_args = {
         .miso_io  = 25,
         .mosi_io  = 23,
         .sck_io   = 19,
         .sda_io   = 22,
-        .callback = &tag_handler
+        .callback = &tag_handler    //回调函数指针
     };
 
     rc522_start(start_args);
-}
-
-void bsp_rc522_text_task()
-{
-    xTaskCreate(
-      &bsp_rc522_text,/* 任务函数 */
-      "bsp_rc522_text",/* 任务名称 */
-      8000,/* 任务的堆栈大小 */
-      NULL,/* 任务的参数 */
-      5,/* 任务的优先级 */
-      NULL);/* 跟踪创建的任务的任务句柄 */
 }

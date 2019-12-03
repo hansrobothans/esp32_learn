@@ -101,6 +101,12 @@ void app_main()
     bsp_rc522_text(NULL);
 
 
+    while(1)
+    {
+        printf("haha\n");
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    }
+
 
 
 }   
