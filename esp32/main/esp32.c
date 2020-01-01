@@ -16,13 +16,13 @@ void app_main()
 {
     // 初始化flash
     // 确认flash没有问题
-    // esp_err_t ret = nvs_flash_init();
-    // if (ret == ESP_ERR_NVS_NO_FREE_PAGES)
-    // {
-    //     ESP_ERROR_CHECK(nvs_flash_erase());
-    //     ret = nvs_flash_init();
-    // }
-    // ESP_ERROR_CHECK(ret);
+    esp_err_t ret = nvs_flash_init();
+    if (ret == ESP_ERR_NVS_NO_FREE_PAGES)
+    {
+        ESP_ERROR_CHECK(nvs_flash_erase());
+        ret = nvs_flash_init();
+    }
+    ESP_ERROR_CHECK(ret);
 
     printf("haha\n");
 
@@ -82,9 +82,9 @@ void app_main()
     // start_webserver();
 
     // // st7735测试
-    // st7735_init();    
-    // // st7735_image();
-    // st7735_rect(60, 60, 50, 50, COLOR_RED);
+    st7735_init();    
+    // st7735_image();
+    st7735_rect(60, 60, 50, 50, COLOR_RED);
     // for(int i=0;i<30;i++)
     //     for(int j=0;j<10;j++)
     //         st7735_draw_pixel(i, j, COLOR_WHITE);
@@ -97,8 +97,10 @@ void app_main()
     // st7735_draw_string(0, 1, "I LOVE benben", COLOR_WHITE, COLOR_RED,1);
 
 
-    // // mfrc522测试
-    bsp_rc522_text(NULL);
+    printf("text1\n"); 
+
+    // mfrc522测试
+    // bsp_rc522_text(NULL);
 
 
     while(1)

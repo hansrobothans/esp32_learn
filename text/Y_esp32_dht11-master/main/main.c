@@ -10,7 +10,7 @@
 
 void DHT_task(void *pvParameter)
 {
-   setDHTPin(4);
+   setDHTPin(23);
    printf("Starting DHT measurement!\n");
    while(1)
    {
@@ -25,7 +25,7 @@ void app_main(void) {
 
     nvs_flash_init();
     system_init();
-    vTaskDelay(1000 / portTICK_RATE_MS);
+    vTaskDelay(2000 / portTICK_RATE_MS);
     xTaskCreate(&DHT_task, "DHT_task", 2048, NULL, 5, NULL);
     
 //~/.mos/bin/mos build --local --repo /Users/lemonhall/Downloads/mongoose-os --verbose

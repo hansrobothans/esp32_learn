@@ -12,10 +12,13 @@
 #include "soc/gpio_struct.h"
 #include "driver/gpio.h"
 #include "esp_timer.h"
+#include "bsp_spi.h"
 
 spi_device_handle_t rc522_spi;
 esp_timer_handle_t rc522_timer;
 
+
+#define BSP_MFRCC_SDA 16  //cs片选
 
 typedef void(*rc522_tag_callback_t)(uint8_t*);
 

@@ -95,58 +95,58 @@ void task_PCA9685(void *ignore)
 
     printf("Finished setup, entering loop now\n");
 
+    // to do text
+    // printf("ceshi1\n");
+
+    // fade up and down each pin with static logarithmic table
+    // see Weber Fechner Law
+    ret = fade_all_up_down();
+    // ret = ESP_OK;
+
+    if(ret == ESP_ERR_TIMEOUT)
+    {
+        printf("I2C timeout\n");
+    }
+    else if(ret == ESP_OK)
+    {
+        // all good
+    }
+    else
+    {
+        printf("No ack, sensor not connected...skip...\n");
+    }
+
+    vTaskDelay(1000 / portTICK_RATE_MS);
+
     while(1)
     {
-        // to do text
-        // printf("ceshi1\n");
-
-        // fade up and down each pin with static logarithmic table
-        // see Weber Fechner Law
-        ret = fade_all_up_down();
-        // ret = ESP_OK;
-
-        if(ret == ESP_ERR_TIMEOUT)
-        {
-            printf("I2C timeout\n");
-        }
-        else if(ret == ESP_OK)
-        {
-            // all good
-        }
-        else
-        {
-            printf("No ack, sensor not connected...skip...\n");
-        }
-
-        vTaskDelay(1000 / portTICK_RATE_MS);
-
         printf("Blink all pins starting from 0\n");
 
-        for (uint8_t pin = 0; pin < 16; pin++)
-        {
-            printf("Turn LED %d on\n", pin);
-            setPWM(pin, 400, 800);
+        // for (uint8_t pin = 0; pin < 16; pin++)
+        // {
+        //     printf("Turn LED %d on\n", pin);
+        //     setPWM(pin, 0, 230);
 
-            if(ret == ESP_ERR_TIMEOUT)
-            {
-                printf("I2C timeout\n");
-            }
-            else if(ret == ESP_OK)
-            {
-                // all good
-            }
-            else
-            {
-                printf("No ack, sensor not connected...skip...\n");
-            }
+        //     if(ret == ESP_ERR_TIMEOUT)
+        //     {
+        //         printf("I2C timeout\n");
+        //     }
+        //     else if(ret == ESP_OK)
+        //     {
+        //         // all good
+        //     }
+        //     else
+        //     {
+        //         printf("No ack, sensor not connected...skip...\n");
+        //     }
 
-            vTaskDelay(2000/portTICK_PERIOD_MS);
+        //     vTaskDelay(2000/portTICK_PERIOD_MS);
 
-            printf("Turn LED %d off\n", pin);
-            setPWM(pin, 400, 2000);
-        }
+        //     printf("Turn LED %d off\n", pin);
+        //     setPWM(pin, 0, 340);
+        // }
 
-        vTaskDelay(1000 / portTICK_RATE_MS);
+        // vTaskDelay(1000 / portTICK_RATE_MS);
 
         /*
         // led turn on and 100ms off, starting from pin 0...15
@@ -190,7 +190,16 @@ void task_PCA9685(void *ignore)
 
         // write_i2c_register_two_words(LED0_ON_L, 4096, 0);
         // vTaskDelay(1000/portTICK_PERIOD_MS);
-        // write_i2c_register_two_words(LED0_ON_L, 0, 4096);   
+        // write_i2c_register_two_words(LED0_ON_L, 0, 4096);  
+
+        // for (int i = 1; i < 4096; i++)
+        // {
+        //     printf("Turn LED %d on\n", i);
+        //     setPWM(0, 0, i);
+        //     vTaskDelay(10/portTICK_PERIOD_MS);
+        // }
+
+
     }
 
     vTaskDelete(NULL);

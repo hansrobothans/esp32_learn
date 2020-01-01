@@ -241,13 +241,31 @@ uint32_t st7735_draw_string(uint16_t x, uint16_t y, const char *pt, int16_t colo
 
 void st7735_init() {
   esp_err_t ret;
-  // esp32 spi configuration
-  spi_bus_config_t buscfg = {.miso_io_num = BSP_ST7735_MISO,
-                             .mosi_io_num = BSP_ST7735_MOSI,
-                             .sclk_io_num = BSP_ST7735_CLK,
-                             .quadwp_io_num = -1,  // unused
-                             .quadhd_io_num = -1,  // unused
-                             .max_transfer_sz = LCD_WIDTH * LCD_HEIGHT * 2};
+  spi_host_device_t spi_host = VSPI_HOST;
+  #ifdef CONFIG_ST7735_HOST_HSPI
+  spi_host = HSPI_HOST;
+  #endif
+
+  // // esp32 spi configuration
+  // spi_bus_config_t buscfg = {
+  //   .miso_io_num = BSP_ST7735_MISO,
+  //   .mosi_io_num = BSP_ST7735_MOSI,
+  //   .sclk_io_num = BSP_ST7735_CLK,
+  //   .quadwp_io_num = -1,  // unused
+  //   .quadhd_io_num = -1,  // unused
+  //   .max_transfer_sz = LCD_WIDTH * LCD_HEIGHT * 2};
+  
+  // // Initialize the SPI bus
+  // ret = spi_bus_initialize(spi_host, &buscfg, 1);
+  // ESP_ERROR_CHECK(ret);
+  printf("text1\n");
+  bsp_spi_init(
+    -1, 
+    BSP_ST7735_MOSI, 
+    BSP_ST7735_CLK, 
+    LCD_WIDTH*LCD_HEIGHT*2
+    );
+  printf("t2\n");
 
   spi_device_interface_config_t devcfg = {
       .clock_speed_hz = 10 * 1000 * 1000,       // Clock out at 10 MHz
@@ -257,40 +275,41 @@ void st7735_init() {
       .pre_cb = lcd_spi_pre_transfer_callback,  // Specify pre-transfer callback to handle D/C line
   };
 
-  spi_host_device_t spi_host = VSPI_HOST;
-  #ifdef CONFIG_ST7735_HOST_HSPI
-  spi_host = HSPI_HOST;
-  #endif
+  printf("t3\n");
 
-  // Initialize the SPI bus
-  ret = spi_bus_initialize(spi_host, &buscfg, 1);
-  ESP_ERROR_CHECK(ret);
   // Attach the LCD to the SPI bus
   ret = spi_bus_add_device(spi_host, &devcfg, &spi_dev);
   ESP_ERROR_CHECK(ret);
-
+  printf("t4\n");
   // Initialize non-SPI GPIOs
   gpio_set_direction(BSP_ST7735_DC, GPIO_MODE_OUTPUT);
   gpio_set_direction(BSP_ST7735_RST, GPIO_MODE_OUTPUT);
   gpio_set_direction(BSP_ST7735_BCKL, GPIO_MODE_OUTPUT);
 
+  printf("t5\n");
   // Reset the display
   gpio_set_level(BSP_ST7735_RST, 0);
   vTaskDelay(500 / portTICK_RATE_MS);
   gpio_set_level(BSP_ST7735_RST, 1);
   vTaskDelay(500 / portTICK_RATE_MS);
 
+  printf("t6\n");
   // Send all the init commands
   int cmd = 0;
   while (st7735_init_cmds[cmd].databytes != 0xff) {
+    printf("t7\n");
     st7735_cmd(st7735_init_cmds[cmd].cmd);
+    printf("t8\n");
     st7735_data(st7735_init_cmds[cmd].data, st7735_init_cmds[cmd].databytes & 0x1F);
+    printf("t9\n");
     if (st7735_init_cmds[cmd].databytes & ST_CMD_DELAY) {
       vTaskDelay(100 / portTICK_RATE_MS);
     }
+    printf("t10\n");
     cmd++;
   }
 
+  st7735_fill_screen(COLOR_WHITE);
   /// Enable backlight
   gpio_set_level(BSP_ST7735_BCKL, 1);
   // 黑屏

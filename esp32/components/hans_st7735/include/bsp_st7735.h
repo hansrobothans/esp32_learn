@@ -18,6 +18,7 @@
 #include "driver/spi_master.h"
 #include "soc/gpio_struct.h"
 #include "ascii_font.h"
+#include "bsp_spi.h"
 
 
 // BSP_ST7735_BCKL		BLK//接模块BL引脚，背光可以采用IO控制或者PWM控制，也可以直接接到高电平常亮
@@ -29,19 +30,29 @@
 
 
 #ifdef CONFIG_ST7735_HOST_VSPI
-#define BSP_ST7735_MISO -1
-#define BSP_ST7735_MOSI 19//23  // SDA
-#define BSP_ST7735_CLK 18//19
-#define BSP_ST7735_CS 5//5
+//测试能用
+// #define BSP_ST7735_MISO -1
+// #define BSP_ST7735_MOSI 19//23  // SDA
+// #define BSP_ST7735_CLK 18//19
+// #define BSP_ST7735_CS 5//5
 
-#define BSP_ST7735_DC 16//21
-#define BSP_ST7735_RST 17//22
+// #define BSP_ST7735_DC 16//21
+// #define BSP_ST7735_RST 17//22
+
+#define BSP_ST7735_MISO BSP_MISO
+#define BSP_ST7735_MOSI BSP_MOSI
+#define BSP_ST7735_CLK BSP_CLK
+#define BSP_ST7735_CS 21
+
+#define BSP_ST7735_DC 18
+#define BSP_ST7735_RST 19
+
 
 
 #elif CONFIG_ST7735_HOST_HSPI
-#define BSP_ST7735_MISO -1
-#define BSP_ST7735_MOSI 13  // SDA
-#define BSP_ST7735_CLK 14
+#define BSP_ST7735_MISO BSP_MISO
+#define BSP_ST7735_MOSI BSP_MOSI
+#define BSP_ST7735_CLK BSP_CLK
 #define BSP_ST7735_CS 15
 
 #define BSP_ST7735_DC 4
@@ -49,7 +60,7 @@
 #endif
 
 // LCD backlight contorl
-#define BSP_ST7735_BCKL 15//18
+#define BSP_ST7735_BCKL 5//15//18
 
 #ifdef CONFIG_USE_COLOR_RBG565 // R-B-G 5-6-5
 // Some ready-made 16-bit (RBG-565) color settings:

@@ -55,9 +55,9 @@ void sendStart()
   gpio_set_direction(DHT_PIN, GPIO_MODE_OUTPUT);
   gpio_set_level(DHT_PIN,0);
   //vTaskDelay(36 / portTICK_RATE_MS);
-  ets_delay_us(22000);
+  ets_delay_us(22000);  //至少18ms
   gpio_set_level(DHT_PIN,1);
-  ets_delay_us(43);
+  ets_delay_us(43);   //20-40us
   gpio_set_direction(DHT_PIN, GPIO_MODE_INPUT);
 }
 
@@ -89,6 +89,7 @@ int getData(int type)
       counter = counter + 1;
       ets_delay_us(1);
   }
+
   //Now that the DHT has pulled the line low, 
   //it will keep the line low for 80 us and then high for 80us
   //check to see if it keeps low
